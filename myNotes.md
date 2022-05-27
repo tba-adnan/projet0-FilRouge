@@ -1,17 +1,4 @@
-**figma ===> Tebbaa.adnane.dev@gmail.com**
-
-**Slides ===>** [**Here.**](https://docs.google.com/presentation/d/1qK_CseSbKhN749owblIMuSmWVDPw7Ui5rVYpdWaDbG8/edit?usp=sharing)
+https://bingotingo.com/how-to-get-envato-elements-free-trial/
 
 
-- going agile : 
- > 
-
- 
-
-
-```
-Landing Page > index.html
- |
- |>>> 
-
-```
+https://elements.envato.com/fr/web-templates/properties-responsive
