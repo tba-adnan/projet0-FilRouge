@@ -7,6 +7,6 @@
 
 ## Going agile : 
 
-[**Jira instance**](https://tb-adn.atlassian.net/)
+[**Jira instance.**](https://tb-adn.atlassian.net/)
 
 
