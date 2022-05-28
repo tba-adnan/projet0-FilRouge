@@ -1,4 +1,10 @@
 https://bingotingo.com/how-to-get-envato-elements-free-trial/
 
-
 https://elements.envato.com/fr/web-templates/properties-responsive
+
+Jira is associated with > razorzeroday@gmail.com
+
+Backend with Laravel/PHP.
+Blog in Wordpress.
+JS & APIs integration.
+DB in MySQL
