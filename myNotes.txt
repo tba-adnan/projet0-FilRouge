@@ -8,3 +8,4 @@ Backend with Laravel/PHP.
 Blog in Wordpress.
 JS & APIs integration.
 DB in MySQL
+Gsap js

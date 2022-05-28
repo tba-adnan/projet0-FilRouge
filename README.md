@@ -8,5 +8,3 @@
 ## Going agile : 
 
 [**Jira instance.**](https://tb-adn.atlassian.net/)
-
-
