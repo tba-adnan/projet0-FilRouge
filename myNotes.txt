@@ -4,8 +4,31 @@ https://elements.envato.com/fr/web-templates/properties-responsive
 
 Jira is associated with > razorzeroday@gmail.com
 
+
+EIR : 
+
 Backend with Laravel/PHP.
-Blog in Wordpress.
+Blog (Subdomain) in Wordpress.
 JS & APIs integration.
-DB in MySQL
-Gsap js
+DB in MySQL.
+Gsap js.
+
+
+User functions : 
+- Signup. 
+- Login.
+- Main Project function.
+  - Map.
+  - Search medics > show price.
+                  > show uses with graphics.
+                  > show info.
+  > Display analytics (Most medics used, time, prices...).
+  > Display Medics History & timeline.
+- Contact-us. (with jira :eyes:)
+- Paypal donation.
+- Blog.
+- About-us.
+
+Admin functions : 
+- Manage users 
+- Analytics > Most searched Medics...
