@@ -8,10 +8,12 @@ Jira is associated with > razorzeroday@gmail.com
 EIR : 
 
 Backend with Laravel/PHP.
+React components. (Nav, footer, elements.)
 Blog (Subdomain) in Wordpress.
 JS & APIs integration.
 DB in MySQL.
 Gsap js.
+
 
 
 User functions : 
@@ -19,12 +21,14 @@ User functions :
 - Login.
 - Main Project function.
   - Map.
+  
   - Search medics > show price.
                   > show uses with graphics.
                   > show info.
   > Display analytics (Most medics used, time, prices...).
   > Display Medics History & timeline.
-- Contact-us. (with jira :eyes:)
+
+- Contact-us & Newsletter. (with jira :eyes:)
 - Paypal donation.
 - Blog.
 - About-us.
@@ -32,3 +36,6 @@ User functions :
 Admin functions : 
 - Manage users 
 - Analytics > Most searched Medics...
+
+
+Logo Font : Proxima Soft Regular.
