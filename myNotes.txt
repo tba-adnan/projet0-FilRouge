@@ -31,8 +31,13 @@ User functions :
 - Paypal donation.
 - Blog.
 - About-us.
-- FAQ.
 - Terms and Conditions
+
+
+6 Main Directories : 
+
+Login - Signup - Blog
+Newsletter - Contact-us - Terms and Conditions
 
 Admin functions : 
 - Manage users 
