@@ -21,7 +21,6 @@ User functions :
 - Login.
 - Main Project function.
   - Map.
-  
   - Search medics > show price.
                   > show uses with graphics.
                   > show info.
@@ -32,10 +31,10 @@ User functions :
 - Paypal donation.
 - Blog.
 - About-us.
+- FAQ.
+- Terms and Conditions
 
 Admin functions : 
 - Manage users 
-- Analytics > Most searched Medics...
-
-
+- Analytics > Most searched Medics, Medics Total revenue, Revenue per User... 
 Logo Font : Proxima Soft Regular.
