@@ -1,0 +1,278 @@
+/* 
+---------------------------------------------
+buttons
+--------------------------------------------- 
+*/
+
+.button {
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 4px;
+	color: #fff;
+	font-weight: $semi;
+	font-size: 15px;
+	letter-spacing: 1px;
+	text-decoration: none !important;
+	border: none;
+	min-width: 150px;
+	outline: none;
+
+	&.btn-52 {
+		height: 52px;
+		line-height: 52px;
+	}
+
+	&:hover {
+		color: #fff;
+	}
+
+	&.button-primary {
+		background: $primaryColor;
+		outline: none;
+
+		&:hover {
+			box-shadow: 0 4px 11px rgba(55, 125, 255, 0.35);
+		}
+	}
+
+	&.button-primary-soft {
+		background: $primaryColorSoft;
+		color: $primaryColor;
+		outline: none;
+	}
+
+	&.button-success {
+		background: $successColor;
+		outline: none;
+
+		&:hover {
+			box-shadow: 0 4px 11px rgba(0, 201, 167, 0.35);
+		}
+	}
+
+	&.button-success-soft {
+		background: $successColorSoft;
+		color: $successColor;
+		outline: none;
+	}
+}
+
+.mini-button {
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 4px;
+	color: #fff;
+	font-weight: $normal;
+	font-size: 14px;
+	letter-spacing: 1px;
+	text-decoration: none !important;
+	border: none;
+	min-width: 70px;
+	outline: none;
+
+	&:hover {
+		color: #fff;
+	}
+
+	&.button-primary {
+		background: $primaryColor;
+		outline: none;
+
+		&:hover {
+			box-shadow: 0 4px 11px rgba(55, 125, 255, 0.35);
+		}
+	}
+
+	&.button-primary-soft {
+		background: $primaryColorSoft;
+		color: $primaryColor;
+		outline: none;
+	}
+
+	&.button-success {
+		background: $successColor;
+		outline: none;
+
+		&:hover {
+			box-shadow: 0 4px 11px rgba(0, 201, 167, 0.35);
+		}
+	}
+
+	&.button-success-soft {
+		background: $successColorSoft;
+		color: $successColor;
+		outline: none;
+	}
+}
+
+.btn-reply {
+	background: #F4F8FB;
+	color: $textColor;
+	height: 25px;
+	line-height: 25px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 14px;
+	@include radius(100px);
+	@include transition(.3s);
+
+	i {
+		font-size: 12px;
+	}
+
+	&:hover {
+		background: $primaryColor;
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+.video-button {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	text-decoration: none !important;
+
+	&.oval {
+		.play {
+			@include radius(10px);
+		}
+	}
+	
+	.play {
+		width: 50px;
+		height: 50px;
+		background: $successColorSoft;
+		color: $successColor;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-align: center;
+		align-items: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		padding-left: 5px;
+		@include radius(4px);
+	}
+
+	span {
+		display: inline-block;
+		margin-left: 15px;
+		font-weight: $semi;
+		font-size: 14px;
+		letter-spacing: 1px;
+		color: $headingColor;
+	}
+}
+
+.play-button {
+	width: 76px;
+	height: 76px;
+	position: relative;
+	text-decoration: none !important;
+
+	&:hover {
+		&:after {
+			transform: scale(1.1);
+		}
+	}
+
+	&:before {
+		content: '';
+		position: absolute;
+		width: 76px;
+		height: 76px;
+		background: #fff;
+		z-index: 1;
+		opacity: .3;
+		@include radius(100px);
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		background: #fff;
+		z-index: 2;
+		top: 13px;
+		left: 13px;
+		@include radius(100px);
+		transition: all .2s ease-in-out;
+	}
+
+	i {
+		position: relative;
+		z-index: 3;
+		padding-left: 5px;
+		color: $primaryColor;
+	}
+}
+
+.download-button {
+	background: $primaryColor;
+	display: inline-block;
+	min-width: 170px;
+	height: 54px;
+	@include radius(100px);
+	overflow: hidden;
+
+	.icon {
+		float: left;
+		width: 50px;
+		height: 54px;
+		line-height: 54px;
+		font-size: 24px;
+		color: #fff;
+		text-align: center;
+
+		img {
+			margin-top: -4px;
+		}
+	}
+
+	.text {
+		float: left;
+		height: 54px;
+		text-align: left;
+
+		span {
+			display: block;
+			font-size: 12px;
+			letter-spacing: 0.40px;
+			color: #fff;
+			line-height: 12px;
+			margin-top: 10px;
+		}
+
+		strong {
+			display: block;
+			font-size: 16px;
+			letter-spacing: 0.60px;
+			color: #fff;
+			line-height: 24px;
+		}
+	}
+}
+
+.bottom-button {
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 26px;
+	color: $primaryColor;
+	background: #FFFFFF;
+	box-shadow: 0 0 64px 0 rgba(22,28,45,0.1);
+	@include radius(100px);
+	position: relative;
+	z-index: 1;
+}

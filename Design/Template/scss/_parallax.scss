@@ -1,0 +1,32 @@
+/* 
+---------------------------------------------
+parallax
+--------------------------------------------- 
+*/
+
+.parallax {
+	min-height: 100px;
+	background: transparent;
+	padding-top: 120px;
+	padding-bottom: 120px;
+	overflow: hidden;
+	position: relative;
+
+	&.p-200 {
+		padding-top: 200px;
+		padding-bottom: 200px;
+	}
+
+	.content {
+		position: relative;
+		z-index: 2;
+	}
+
+	&.overlay-gradient {
+		&:before {
+			height: 150%;
+			top: -25%;
+			bottom: -25%;
+		}
+	}
+}

@@ -1,0 +1,6 @@
+Hex Colors : 
+
+#0f70eb : Dodgerblue
+#916fdd : Mediumpurple
+#f7fafd : Ghost White
+

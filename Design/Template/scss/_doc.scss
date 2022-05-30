@@ -1,0 +1,90 @@
+/* 
+---------------------------------------------
+doc
+--------------------------------------------- 
+*/
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: calc(100% - 80px);
+	background: #fff;
+}
+
+.doc-menu {
+	position: fixed;
+	width: 280px;
+	left: 0px;
+	top: 80px;
+	bottom: 0px;
+	border-right: 1px solid #EBEDF2;
+	z-index: 2;
+	overflow-y: auto;
+	background: #FAFBFD;
+}
+
+.doc-content {
+	position: relative;
+	width: calc(100% - 280px);
+	margin-left: 280px;
+	z-index: 1;
+	background: #fff;
+
+	p {
+		color: $headingColor;
+	}
+}
+
+.doc-nav {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+
+	li {
+		margin-bottom: 10px;
+		margin-top: 10px;
+
+		a {
+			color: $textColor;
+			@include transition(.3s);
+
+			&:hover, &.active {
+				color: $primaryColor;
+				text-decoration: none;
+				padding-left: 5px;
+			}
+
+			&.active {
+				padding-left: 0px;
+			}
+		}
+	}
+}
+
+@media (max-width : 991px) {
+	.doc-menu {
+		left: -280px;
+		@include transition(.3s);
+
+		&.active {
+			left: 0px;
+		}
+	}
+
+	.doc-content {
+		width: 100%;
+		margin-left: 0px;
+	}
+
+	.doc-menu-button {
+		background: $successColor;
+		height: 60px;
+		line-height: 60px;
+		text-align: center;
+		color: #fff;
+		cursor: pointer;
+		font-size: 17px;
+	}
+}

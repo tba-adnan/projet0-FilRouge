@@ -1,0 +1,58 @@
+/* 
+---------------------------------------------
+faq
+--------------------------------------------- 
+*/
+
+.faq {
+
+	.card {
+		border: none;
+		background: none;
+	    background: #FFFFFF;
+		margin-bottom: 20px;
+		border: 1px solid #EEEEEE;
+
+		.card-header {
+			padding: 0px;
+			border: none;
+			background: none;
+			padding-left: 30px;
+			padding-right: 30px;
+			@include transition(.3s);
+
+			&:hover {
+
+				.faq-title {
+					padding-left: 5px;
+				}
+			}
+
+			.faq-title {
+				width: 100%;
+				text-align: left;
+				padding: 0px;
+				text-decoration: none !important;
+				@include transition(.3s);
+				cursor: pointer;
+				padding-top: 25px;
+				padding-bottom: 25px;
+				border-bottom: 1px solid #EEEEEE;
+			}
+		}
+
+		.card-body {
+			padding: 25px;
+			padding-bottom: 0px;
+
+			.content {
+				border-top: 1px solid #E4EFF9;
+				padding-top: 30px;
+			}
+
+			p {
+				margin-bottom: 25px;
+			}
+		}
+	}
+}

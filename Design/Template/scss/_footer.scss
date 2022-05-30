@@ -1,0 +1,80 @@
+/* 
+---------------------------------------------
+footer
+--------------------------------------------- 
+*/
+
+.footer {
+
+	.text {
+		font-weight: $normal;
+		font-size: 14px;
+		line-height: 27px;
+		letter-spacing: 0.50px;
+		color: $textColor;
+		margin-bottom: 30px;
+	}
+
+	.footer-nav {
+		margin-bottom: 30px;
+
+		li {
+
+			a {
+				text-decoration: none;
+
+				&:hover {
+					span {
+						color: $primaryColor;
+						padding-left: 18px;
+					}
+				}
+
+				i {
+					color: $textColor;
+				}
+
+				span {
+					font-weight: $normal;
+					font-size: 14px;
+					letter-spacing: 0.50px;
+					color: $textColor;
+					padding-left: 15px;
+					@include transition(.3s);
+				}
+			}
+		}
+	}
+
+	.address {
+		font-weight: $normal;
+		font-size: 14px;
+		line-height: 27px;
+		letter-spacing: 0.50px;
+		color: $textColor;
+
+		p {
+			font-weight: $normal;
+			font-size: 14px;
+			line-height: 27px;
+			letter-spacing: 0.50px;
+			color: $textColor;
+
+			a {
+				color: $primaryColor;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.copyright {
+		border-top: 1px solid #EEEEEE;
+		padding-top: 25px;
+		padding-bottom: 25px;
+		font-weight: $normal;
+		font-size: 14px;
+		line-height: 27px;
+		letter-spacing: 0.50px;
+		color: $textColor;
+	}
+}

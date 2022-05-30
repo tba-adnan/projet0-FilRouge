@@ -1,0 +1,221 @@
+/* 
+---------------------------------------------
+features
+--------------------------------------------- 
+*/
+
+.features-colored {
+	width: 60px;
+	height: 60px;
+	@include radius(100px);
+	text-align: center;
+	line-height: 60px;
+	font-size: 30px;
+
+	&.primary {
+		background: $primaryColorSoft;
+		color: $primaryColor;
+	}
+	&.success {
+		background: $successColorSoft;
+		color: $successColor;
+	}
+	&.danger {
+		background: $dangerColorSoft;
+		color: $dangerColor;
+	}
+	&.warning {
+		background: $warningColorSoft;
+		color: $warningColor;
+	}
+}
+
+.features-white-circle {
+
+	&.right-radial-bottom {
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			width: 90%;
+			height: 30px;
+			left: 59%;
+			top: 40px;
+			background: url(../images/radial-bg-bottom.svg) center center no-repeat;
+		}
+	}
+
+	&.right-radial-top {
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			width: 90%;
+			height: 30px;
+			left: 59%;
+			top: 0px;
+			background: url(../images/radial-bg-top.svg) center center no-repeat;
+		}
+	}
+
+	&:hover, &.active {
+		.icon {
+			background: $primaryColor;
+			color: $primaryColorSoft;
+		}
+	}
+
+	&.gradient {
+		&:hover, &.active {
+			.icon {
+				@include gradient();
+				color: $primaryColorSoft;
+			}
+		}
+	}
+
+	.icon {
+		width: 70px;
+		height: 70px;
+		@include radius(100px);
+		text-align: center;
+		line-height: 70px;
+		font-size: 30px;
+		border: 1px solid $primaryColorSoft;
+		background: #fff;
+		@include transition(.3s);
+		color: $primaryColor;
+		display: inline-block;
+	}
+}
+
+.features-white-square {
+
+	&.right-radial-bottom {
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			width: 90%;
+			height: 30px;
+			left: 59%;
+			top: 40px;
+			background: url(../images/radial-bg-bottom.svg) center center no-repeat;
+		}
+	}
+
+	&.right-radial-top {
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			width: 90%;
+			height: 30px;
+			left: 59%;
+			top: 0px;
+			background: url(../images/radial-bg-top.svg) center center no-repeat;
+		}
+	}
+
+	&:hover, &.active {
+		.icon {
+			background: $primaryColor;
+			color: $primaryColorSoft;
+		}
+	}
+
+	&.gradient {
+		&:hover, &.active {
+			.icon {
+				@include gradient();
+				color: $primaryColorSoft;
+			}
+		}
+	}
+
+	.icon {
+		width: 70px;
+		height: 70px;
+		@include radius(4px);
+		text-align: center;
+		line-height: 70px;
+		font-size: 26px;
+		border: 1px solid $primaryColorSoft;
+		background: #fff;
+		@include transition(.3s);
+		color: $primaryColor;
+		display: inline-block;
+	}
+}
+
+.features-shadow {
+	overflow: hidden;
+
+	.icon {
+		float: left;
+		width: 96px;
+		height: 96px;
+		text-align: center;
+		line-height: 96px;
+		@include radius(100px);
+		border: 1px solid #C1D0FF;
+		font-size: 30px;
+		color: $primaryColor;
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			width: 70px;
+			height: 70px;
+			top: 12px;
+			left: 12px;
+			@include radius(100px);
+			border: 1px solid #C1D0FF;
+			background: $primaryColorSoft;
+			z-index: 1;
+		}
+
+		i {
+			position: relative;
+			z-index: 2;
+		} 
+	}
+
+	.text {
+		float: left;
+		width: calc(100% - 96px);
+		padding-left: 30px;
+
+		a {
+			color: $primaryColor;
+			font-size: 14px;
+			font-weight: $bold;
+			letter-spacing: 0.50px;
+			text-decoration: none;
+		}
+	}
+}
+
+@media (max-width : 1200px) {
+	.features-white-circle, .features-white-square {
+
+		&.right-radial-bottom {
+
+			&:before {
+				display: none;
+			}
+		}
+
+		&.right-radial-top {
+
+			&:before {
+				display: none;
+			}
+		}
+	}	
+}

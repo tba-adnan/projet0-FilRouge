@@ -1,0 +1,407 @@
+/* 
+---------------------------------------------
+welcome
+--------------------------------------------- 
+*/
+
+.welcome-overlay {
+	position: relative;
+
+	.background {
+		overflow: hidden;
+		position: relative;
+		
+		.bg-image {
+			position: absolute;
+			z-index: 1;
+			width: 75%;
+			height: 100%;
+			right: 0px;
+			border-bottom: 1px solid #fff;
+			border-top: 1px solid #fff;
+
+			img {
+				float: right;
+			}
+		}
+
+		.bg-1 {
+			position: relative;
+			z-index: 2;
+			pointer-events: none;
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+
+	.content {
+		position: absolute;
+		width: 100%;
+		z-index: 2;
+	}
+}
+
+.welcome-flow {
+
+	.flow-container {
+		height: 640px;
+		position: relative;
+		overflow: hidden;
+
+		.flow-content {
+			-webkit-animation: welcome-flip-animation linear 50s infinite;
+	        		animation: welcome-flip-animation linear 50s infinite;
+		}
+	}
+}
+
+.welcome-percent {
+	min-height: 750px;
+	position: relative;
+
+	&.right-bg {
+		&:before {
+			content: '';
+			position: absolute;
+			width: 60%;
+			height: 100%;
+			top: 0px;
+			right: 0px;
+			background: $primaryColorSoft;
+			border-bottom-left-radius: 100px;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			width: calc(60% - 20px);
+			height: calc(100% - 20px);
+			top: 0px;
+			right: 0px;
+			background: $primaryColor;
+			border-bottom-left-radius: 100px;
+		}
+	}
+
+	&.right-bg-gradient {
+		&:before {
+			content: '';
+			position: absolute;
+			width: 60%;
+			height: 100%;
+			top: 0px;
+			right: 0px;
+			background: $primaryColorSoft;
+			border-bottom-left-radius: 100px;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			width: calc(60% - 20px);
+			height: calc(100% - 20px);
+			top: 0px;
+			right: 0px;
+			@include gradient();
+			border-bottom-left-radius: 100px;
+		}
+	}
+
+	.content {
+		width: 100%;
+		z-index: 2;
+
+		.vertical-text {
+			font-weight: $bold;
+			font-size: 68px;
+			line-height: 68px;
+			letter-spacing: 2.50px;
+			text-align: center;
+			color: #EEEEEE;
+			height: 500px;
+
+			.text {
+				transform-origin: 0% 0%;
+    			transform: rotate(-90deg) translate(0%, 0%);
+			}
+		}
+
+		.image {
+			height: 500px;
+			overflow: hidden;
+			border-top-left-radius: 100px;
+
+			.imgfix_wrapper_layer {
+				display: -ms-flexbox;
+				display: flex;
+				-ms-flex-align: center;
+				align-items: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+			}
+		}
+	}
+}
+
+.welcome-auto {
+	padding-top: 180px;
+	padding-bottom: 180px;
+	position: relative;
+
+	.container {
+		z-index: 2;
+		position: relative;
+	}
+}
+
+.particles-js-canvas-el {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 1;
+}
+
+.welcome-personal {
+	height: 630px;
+	overflow: hidden;
+	position: relative;
+
+	.cover {
+		height: 550px;
+	}
+
+	.content {
+		position: absolute;
+		width: 100%;
+		bottom: 0px;
+		z-index: 2;
+
+		.img {
+			background: #fff;
+			padding: 3px;
+			float: left;
+		}
+
+		.text {
+			height: 80px;
+			padding-left: 25px;
+		}
+
+		.social {
+			float: right;
+			margin-left: auto;
+
+			li {
+				display: inline;
+
+				a {
+					float: left;
+					height: 80px;
+					line-height: 80px;
+					margin-left: 10px;
+					font-size: 22px;
+					color: $textColor;
+					@include transition(.3s);
+
+					&:hover {
+						color: $primaryColor;
+					}
+				}
+			}
+		}
+	}
+}
+
+.welcome-bg {
+	.bg {
+		position: absolute;
+		width: 100%;
+		top: 0px;
+		left: 0px;
+	}
+}
+
+.welcome-location {
+	height: 700px;
+	background: $primaryColor;
+	-webkit-perspective: 500px;
+			perspective: 500px;
+
+	&.gradient {
+		@include gradient();
+	}		
+
+	.roads-bg {
+		height: 100px;
+		-webkit-transform: rotateX(45deg);
+				transform: rotateX(45deg);		
+
+		.roads {
+			border: 1px solid red;
+			position: absolute;
+			top: -2400px;
+			height: 5000px;
+			background-image: url(../images/welcome/roads.svg);
+			background-position: 50%;
+			background-size: 25%;
+			width: 100%;
+			-webkit-transform: translateY(-650px);
+					transform: translateY(-650px);
+			-webkit-animation: driving 40000ms linear 0ms infinite;
+					animation: driving 40000ms linear 0ms infinite;
+		}
+	}
+
+	.road {
+		position: absolute;
+		width: 200px;
+		height: 700px;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		margin: auto;
+		background: url(../images/welcome/road.svg) bottom center no-repeat;
+		z-index: 3;
+	}
+
+	.bg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0px;
+		left: 0px;
+		background-image: linear-gradient(180deg, #335EEA 11%, rgba(51,94,234,0.00) 100%);
+		z-index: 4;
+
+		&:before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 98px;
+			bottom: 0px;
+			left: 0px;
+			background: url(../images/welcome/road-bottom.svg) center center;
+		}
+	}
+
+	.content {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0px;
+		left: 0px;
+		z-index: 5;
+
+		.road-arrow {
+			position: absolute;
+			width: 124px;
+			height: 124px;
+			bottom: 80px;
+			left: 0px;
+			right: 0px;
+			margin: auto;
+			background: url(../images/welcome/road-arrow.svg) center center no-repeat;
+		}
+	}
+}
+
+
+@media (max-width : 991px) {
+	.welcome-overlay {
+		.background {
+			width: 100%;
+
+			.bg-image {
+				position: relative;
+				height: 500px;
+				width: 100%;
+
+				&.opacity-30 {
+					&:before {
+						opacity: .5;
+					}
+				}
+			}
+
+			.bg-1 {
+				display: none;
+			}
+		}
+
+		.content {
+			text-align: center;
+
+			h1, p {
+				color: #fff;
+			}
+
+			.buttons {
+				-ms-flex-pack: center;
+				justify-content: center;
+
+				.button {
+					margin-right: 0px;
+				}
+
+				.video-button {
+					display: none;
+				}
+			}
+		}
+
+		.play-button {
+			display: none;
+		}
+	}
+
+	.welcome-flow {
+
+		.content {
+			padding-top: 120px;
+			padding-bottom: 120px;
+			text-align: center;
+
+			.buttons {
+				-ms-flex-pack: center;
+				justify-content: center;
+			}
+		}
+	}
+
+	.welcome-percent {
+		padding-top: 120px;
+		padding-bottom: 120px;
+
+		&.right-bg {
+			&:before {
+				width: 100%;
+			}
+
+			&:after {
+				width: calc(100% - 5px);
+				height: calc(100% - 5px);
+			}
+		}
+
+		.content {
+			.vertical-text {
+				color: $primaryColorSoft;
+				font-size: 46px;
+
+				.text {
+					transform-origin: 0% 10%;
+					transform: rotate(-90deg) translate(30%, 0%);
+				}
+			}
+		}
+	}
+
+	.welcome-location {
+		.roads-bg {
+			height: auto !important;
+		}
+	}
+}

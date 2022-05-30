@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bodrum - Modular Multi Purpose HTML5 Template</title>
+	<meta name="description" content="Bodrum - Modular Multi Purpose HTML5 template by tempload." />
+	<meta name="keywords" content="bodrum, startup, saas, agency, development, html, template, tempload" />
+	<meta name="author" content="tempload" />
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="../html/gradient/assets/images/favicon/favicon.png" />
+
+	<!-- Bootstrap & Plugins CSS -->
+	<link href="../html/gradient/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="../html/gradient/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="../html/gradient/assets/css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+	<link href="../html/gradient/assets/css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+	<link href="../html/gradient/assets/css/default.css" rel="stylesheet" type="text/css">
+	<link href="../html/gradient/assets/css/monokai-sublime.css" rel="stylesheet" type="text/css">
+
+	<!-- Custom CSS -->
+	<link href="../html/gradient/assets/css/documentation.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+	<!-- Header Start -->
+	<header class="main-nav-container box position-fixed">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main-nav">
+						<!-- Logo Start -->
+						<a href="index.html" class="logo pull-left d-flex align-items-center">
+							<img src="../html/gradient/assets/images/logo/dark.svg" alt="">
+							<span class="position-absolute top-30 m-l-130 version"></span>
+						</a>
+						<!-- Logo End -->
+	
+						<!-- Navigation Start -->
+						<nav class="menu pull-right">
+							<ul class="menu-container list-unstyled d-flex align-items-center">	
+								<!-- Mini Menu Start -->
+								<li class="menu-item">
+									<a class="nav-link" href="../html/index.html" target="_blank">Live Preview</a>
+								</li>
+								<!-- Mini Menu End -->
+	
+								<li class="menu-item d-none d-lg-block">
+									<a class="nav-button transition-3d-hover" target="_blank" href="https://themeforest.net/item/bodrum-modular-multi-purpose-html5-template/25649533">Buy Now</a>
+								</li>
+							</ul>
+						</nav>
+						<!-- Navigation End -->
+	
+						<a class="menu-trigger">
+							<span>Menu</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header End -->
+
+	<main class="m-t-80">
+		<div class="doc-menu p-25">
+			<h6 class="m-b-10 font-bold">GETTING STARTED</h6>
+			<ul class="doc-nav m-b-30">
+				<li><a href="index.html">Introduction</a></li>
+				<li><a href="file-structures.html">File Structures</a></li>
+				<li><a href="gulp.html">Gulp</a></li>
+				<li><a href="customization.html">Customization</a></li>
+				<li><a href="credits.html">Credits</a></li>
+				<li><a href="changelog.html">Changelog</a></li>
+			</ul>
+
+			<h6 class="m-b-10 font-bold">CONTENT</h6>
+			<ul class="doc-nav m-b-30">
+				<li><a href="typography.html">Typography</a class="active"></li>
+				<li><a class="active" href="font-awesome.html">Font Awesome</a></li>
+			</ul>
+
+			<h6 class="m-b-10 font-bold">UTILITIES</h6>
+			<ul class="doc-nav">
+				<li><a href="font-weight.html">Font Weight</a></li>
+				<li><a href="font-size.html">Font Size</a></li>
+				<li><a href="text-color.html">Text Color</a></li>
+				<li><a href="background-color.html">Background Color</a></li>
+				<li><a href="spacing-margin.html">Spacing - Margin</a></li>
+				<li><a href="spacing-padding.html">Spacing - Padding</a></li>
+				<li><a href="position.html">Position</a></li>
+				<li><a href="box-rounded.html">Box Rounded</a></li>
+				<li><a href="overlay.html">Overlay</a></li>
+				<li><a href="opacity.html">Opacity</a></li>
+				<li><a href="height.html">Height</a></li>
+			</ul>
+		</div>
+
+		<div class="doc-menu-button">Menu</div>
+		
+		<div class="doc-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 p-t-40 p-b-40">
+						<div class="text-content">
+							<h1>Font Awesome</h1>
+							<p>Get vector icons and social logos on your website with Font Awesome, the web's most popular icon set and toolkit.</p>
+							<div class="divider m-b-20"></div>
+
+							<h2>Overview</h2>
+							<p>Bodrum includes the world's most popular and easiest to use icon set - <a href="https://fontawesome.com/v4.7.0/" target="_blank">Font Awesome</a> - with over 675 free icons.</p>
+							<div class="divider m-b-20"></div>
+
+							<h2>How To Use</h2>
+							<p class="m-b-0">Place this code, which contains everything you need, within the <code>&lt;head&gt;</code> of each template or page that you want to use Font Awesome on.</p>
+							<pre>
+								<code class="language-html" data-lang="html">
+&lt;link href=&quot;yourpath/font-awesome.min.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+								</code>
+							</pre>
+							<p>You need to know two bits of information to reference an icon:</p>
+							<ul>
+								<li>Its name, prefixed with <code>fa-</code></li>
+								<li>The style you want to use's corresponding prefix.</li>
+							</ul>
+							<pre>
+								<code class="language-html" data-lang="html">
+&lt;i class=&quot;fa fa-camera-retro&quot;&gt;&lt;/i&gt;
+&lt;!--
+  1) style prefix == fa
+  2) icon name == fa-camera-retro
+--&gt;
+								</code>
+							</pre>
+							<div class="divider m-b-20"></div>
+
+							<h2>Sizes</h2>
+							<p class="m-b-0">To increase icon sizes relative to their container, use the <code>fa-lg</code> (33% increase), <code>fa-2x</code>,<code>fa-3x</code>, <code>fa-4x</code>, or <code>fa-5x</code> classes.</p>
+							<pre>
+								<code class="language-html" data-lang="html">
+&lt;i class=&quot;fa fa-camera-retro fa-lg&quot;&gt;&lt;/i&gt; fa-lg
+&lt;i class=&quot;fa fa-camera-retro fa-2x&quot;&gt;&lt;/i&gt; fa-2x
+&lt;i class=&quot;fa fa-camera-retro fa-3x&quot;&gt;&lt;/i&gt; fa-3x
+&lt;i class=&quot;fa fa-camera-retro fa-4x&quot;&gt;&lt;/i&gt; fa-4x
+&lt;i class=&quot;fa fa-camera-retro fa-5x&quot;&gt;&lt;/i&gt; fa-5x
+								</code>
+							</pre>
+							<div class="box border-box rounded p-25">
+								<h3>Examples</h3>
+								<i class="fa fa-camera-retro fa-lg"></i>
+								<i class="fa fa-camera-retro fa-2x"></i>
+								<i class="fa fa-camera-retro fa-3x"></i>
+								<i class="fa fa-camera-retro fa-4x"></i>
+								<i class="fa fa-camera-retro fa-5x"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- jQuery -->
+	<script src="../html/gradient/assets/js/jquery-2.1.0.min.js"></script>
+	
+	<!-- Bootstrap -->
+	<script src="../html/gradient/assets/js/popper.js"></script>
+	<script src="../html/gradient/assets/js/bootstrap.min.js"></script>
+
+	<!-- Plugins -->
+	<script src="../html/gradient/assets/js/scrollreveal.min.js"></script>
+	<script src="../html/gradient/assets/js/imgfix.min.js"></script>
+	<script src="../html/gradient/assets/js/owl.carousel.min.js"></script>
+	<script src="../html/gradient/assets/js/parallax.min.js"></script>
+	<script src="../html/gradient/assets/js/waypoints.min.js"></script>
+	<script src="../html/gradient/assets/js/jquery.counterup.min.js"></script>
+	<script src="../html/gradient/assets/js/highlight.pack.js"></script>
+	<script>
+		$(document).ready(function(){
+			hljs.initHighlightingOnLoad();
+		});
+	</script>
+	
+	<!-- Global Init -->
+	<script src="../html/gradient/assets/js/global.js"></script>
+</body>
+</html>

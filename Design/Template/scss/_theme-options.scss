@@ -1,0 +1,40 @@
+/* 
+---------------------------------------------
+font & settings
+--------------------------------------------- 
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&display=swap&subset=latin-ext');
+
+$font : 'Nunito', sans-serif;
+
+$light: 300;
+$normal: 400;
+$semi: 600;
+$bold: 700;
+
+
+// General Colors
+$primaryColor: #0F70EB;
+$primaryColorSoft: #EDF3FF;
+
+$gradientPrimaryStart: #0173EC;
+$gradientPrimaryEnd: #743FE5;
+
+$successColor: #00C9A7;
+$successColorSoft: #E8FAF6;
+
+$dangerColor: #DE4437;
+$dangerColorSoft: #FBEEED;
+
+$warningColor: #FDBF30;
+$warningColorSoft: #FFF4DA;
+
+$gray: #F8F9FA;
+
+
+
+// Text Colors
+$headingColor: #1E2022;
+$textColor: #77838F;
+$textLight: #C1D0FF;
