@@ -1,3 +1,4 @@
+import logo from '../assets/images/costum-images/Logo/Logo1v2.svg';
 import '../assets/css/bootstrap-datetimepicker-standalone.css';
 import '../assets/css/bootstrap-datetimepicker.css';
 import '../assets/css/bootstrap-datetimepicker.min.css';
@@ -15,14 +16,14 @@ import '../assets/css/owl.theme.default.min.css';
 import '../assets/css/theme.css';
 import '../assets/css/theme.min.css';
 
-function Header() {
+function Footer() {
   return (
 	<footer class="footer">
-	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-	<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-	<link href="assets/css/owl.carousel.min.css" rel="stylesheet" type="text/css"/>
-	<link href="assets/css/owl.theme.default.min.css" rel="stylesheet" type="text/css"/>
-	<link href="assets/css/theme.css" rel="stylesheet" type="text/css"></link>
+	<link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+	<link href="../assets/css/owl.carousel.min.css" rel="stylesheet" type="text/css"/>
+	<link href="../assets/css/owl.theme.default.min.css" rel="stylesheet" type="text/css"/>
+	<link href="../assets/css/theme.css" rel="stylesheet" type="text/css"></link>
 		<div class="container">
 			<div class="row">
 				<div class="offset-lg-2 col-lg-8">
@@ -31,7 +32,7 @@ function Header() {
 			</div>
 			<div class="row m-b-30">
 				<div class="col-lg-5 col-md-12 col-sm-12">
-					<img src="assets/images/costum-images/Logo/Logo1v2.svg" class="m-b-20" alt=""/>
+					<img src={logo} class="m-b-20" alt=""/>
 					<div class="text">Eir online Health & Pharmacie est une solution simple pour vous aider à organiser, rechercher et suivre vos médicaments.</div>
 				</div>
 				<div class="col-lg-2 col-md-4 col-sm-6 col-6">
@@ -63,4 +64,4 @@ function Header() {
 	</footer>
   );
 }
-export default Header;
+export default Footer;

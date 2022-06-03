@@ -16,7 +16,7 @@ import '../assets/css/owl.theme.default.min.css';
 import '../assets/css/theme.css';
 import '../assets/css/theme.min.css';
 
-function Footer() {
+function Header() {
   return (
     <header className="main-nav-container box">
     <div className="container">
@@ -64,4 +64,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default Header;
