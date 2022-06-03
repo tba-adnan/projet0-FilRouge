@@ -11,14 +11,12 @@ import '../assets/css/default.css';
 import '../assets/css/documentation.css';
 import '../assets/css/font-awesome.min.css';
 import '../assets/css/monokai-sublime.css';
-// import '../assets/css/owl.carousel.min.css';
+import '../assets/css/owl.carousel.min.css';
 import '../assets/css/owl.theme.default.min.css';
 import '../assets/css/theme.css';
 import '../assets/css/theme.min.css';
 
-// import './App.css';
-
-function Header() {
+function Footer() {
   return (
     <header className="main-nav-container box">
     <div className="container">
@@ -31,7 +29,7 @@ function Header() {
                     <nav className="menu pull-right">
                         <ul className="menu-container list-unstyled d-flex align-items-center">
                             <li className="menu-item open-sub-menu">
-                                <a className="nav-link submenu-icon" href="javascript:;">Home</a>
+                                <a className="nav-link submenu-icon" href="#">Home</a>
                                 <ul className="sub-menu list-unstyled box rounded-bottom">
                                     <li className="sub-menu-item">
                                         <a href="../blog/card-style.html" className="sub-menu-link">Blog</a>
@@ -66,4 +64,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Footer;
