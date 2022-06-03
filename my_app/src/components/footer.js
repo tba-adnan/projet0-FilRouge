@@ -1,4 +1,3 @@
-import logo from '../assets/images/costum-images/Logo/Logo1v2.svg';
 import '../assets/css/bootstrap-datetimepicker-standalone.css';
 import '../assets/css/bootstrap-datetimepicker.css';
 import '../assets/css/bootstrap-datetimepicker.min.css';
@@ -33,7 +32,7 @@ function Header() {
 			<div class="row m-b-30">
 				<div class="col-lg-5 col-md-12 col-sm-12">
 					<img src="assets/images/costum-images/Logo/Logo1v2.svg" class="m-b-20" alt=""/>
-					<div class="text">Eir online Health & Pharmacie est une solution simple pour vous aider à organiser, rechercher et suivre vos médicaments. </div>
+					<div class="text">Eir online Health & Pharmacie est une solution simple pour vous aider à organiser, rechercher et suivre vos médicaments.</div>
 				</div>
 				<div class="col-lg-2 col-md-4 col-sm-6 col-6">
 					<h6 class="m-b-10">Helpful Links</h6>

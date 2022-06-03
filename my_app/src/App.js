@@ -29,7 +29,7 @@ function App() {
     <div className="App">
       <Header />
       <Footer/>
-      {/* <Calls/> */}
+      <Calls/>
     </div>
   );
 }
