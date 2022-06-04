@@ -2,8 +2,6 @@ import logo from './logo.svg';
 import './App.css';
 import Header from '../src/components/header';
 import Footer from '../src/components/footer';
-import Calls from './components/js_calls';
-// import '../src/assets/css'; 
 import '../src/assets/css/bootstrap-datetimepicker-standalone.css';
 import '../src/assets/css/bootstrap-datetimepicker.css';
 import '../src/assets/css/bootstrap-datetimepicker.min.css';
@@ -22,15 +20,16 @@ import '../src/assets/css/theme.css';
 import '../src/assets/css/theme.min.css';
 // Js files : 
 
-
-
 function App() {
   return (
     <div className="App">
       <Header />
       <Footer/>
+      {/* <Footer/>
       <Calls/>
+      <Index/> */}
     </div>
+
   );
 }
 
