@@ -1,80 +1,84 @@
-import logo from '../assets/images/costum-images/Logo/Logo1v2.svg';
-import '../assets/css/bootstrap-datetimepicker-standalone.css';
-import '../assets/css/bootstrap-datetimepicker.css';
-import '../assets/css/bootstrap-datetimepicker.min.css';
-import '../assets/css/bootstrap-select.css';
-import '../assets/css/bootstrap-select.min.css';
-import '../assets/css/bootstrap.css';
-import '../assets/css/bootstrap.min.css';
-import '../assets/css/costum-dev.css';
-import '../assets/css/default.css';
-import '../assets/css/documentation.css';
-import '../assets/css/font-awesome.min.css';
-import '../assets/css/monokai-sublime.css';
-import '../assets/css/owl.carousel.min.css';
-import '../assets/css/owl.theme.default.min.css';
-import '../assets/css/theme.css';
-import '../assets/css/theme.min.css';
+import React from "react";
+import PropTypes from "prop-types";
+import "./SimpleReactFooter.sass";
+import {ImFacebook2} from "react-icons/im";
+import {FaTwitterSquare} from "react-icons/fa"
+import {ImInstagram} from "react-icons/im";
+import {ImLinkedin} from "react-icons/im";
+import {FaPinterestSquare} from "react-icons/fa";
+import {ImYoutube} from "react-icons/im";
 
-function Footer() {
-  return (
+class SimpleReactFooter extends React.Component {
+    constructor(props) {
+        super(props);
+    }
 
-	<footer className="footer">
-	<link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-	<link href="../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-	<link href="../assets/css/owl.carousel.min.css" rel="stylesheet" type="text/css"/>
-	<link href="../assets/css/owl.theme.default.min.css" rel="stylesheet" type="text/css"/>
-	<link href="../assets/css/theme.css" rel="stylesheet" type="text/css"></link>
-		<div className="container">
-			<div className="row">
-				<div className="offset-lg-2 col-lg-8">
-					<div className="divider m-b-60"></div>
-				</div>
-			</div>
-			<div className="row m-b-30">
-				<div className="col-lg-5 col-md-12 col-sm-12">
-					<img src={logo} className="m-b-20" alt=""/>
-					<div className="text">Eir online Health & Pharmacie est une solution simple pour vous aider à organiser, rechercher et suivre vos médicaments.</div>
-				</div>
-				<div className="col-lg-2 col-md-4 col-sm-6 col-6">
-					<h6 className="m-b-10">Helpful Links</h6>
-					<ul className="footer-nav list-unstyled">
-						<li><a href="#"><i className="fa fa-angle-right"></i><span>Connexion</span></a></li>
-						<li><a href="#"><i className="fa fa-angle-right"></i><span>S'inscrire</span></a></li>
-						<li><a href="#"><i className="fa fa-angle-right"></i><span>Blog</span></a></li>
-						<li><a href="#"><i className="fa fa-angle-right"></i><span>News Letter</span></a></li>
-						<li><a href="#"><i className="fa fa-angle-right"></i><span>Contactez-nous</span></a></li>
-						<li><a href="#"><i className="fa fa-angle-right"></i><span>Termes</span></a></li>
-					</ul>
-				</div>
-				<div className="col-lg-3 col-md-4 col-sm-12">
-					<h6 className="m-b-10">Contact Us</h6>
-					<div className="address">
-						<p>42, Lot Hind - Casabarata, 9901, Tangier, Kingdom of Morocco.</p>
-						<p>Phone: (212)</p>
-						<p><span>E-Mail: </span><a href="#">tebbaa.adnane.dev@gmail.com</a></p>
-					</div>
-				</div>
-			</div>
-			<div className="row">
-				<div className="col-lg-12">
-					<p className="copyright text-center">© 2022 Eir. All Rights Reserved. By Tebbaa adnane.</p>
-				</div>
-			</div>
-		</div>
-<script src="../assets/js/jquery-2.1.0.min.js"></script>
-<script src="../assets/js/popper.js"></script>
-<script src="../assets/js/bootstrap.min.js"></script>
-<script src="../assets/js/scrollreveal.min.js"></script>
-<script src="../assets/js/imgfix.min.js"></script>
-<script src="../assets/js/owl.carousel.min.js"></script>
-<script src="../assets/js/parallax.min.js"></script>
-<script src="../assets/js/waypoints.min.js"></script>
-<script src="../assets/js/jquery.counterup.min.js"></script>
-<script src="../assets/js/global.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-</footer>
+	render() {
+		return (
+            <div style={{ backgroundColor: this.props.backgroundColor || "bisque" }} className="footer-container">
 
-  );
+                <div className="first-row">
+                    <div className="col-about">
+                            <div style={{ color: this.props.fontColor || "black" }} className="first-title">{this.props.title}</div> 
+                            <div style={{ color: this.props.fontColor || "black" }} className="description">{this.props.description}</div>
+                    </div>
+                    {this.props.columns.map(column => (
+                        <div className="columns">
+                            <div style={{ color: this.props.fontColor || "black" }} className="second-title">{column.title}</div>
+                            {column.resources.map(resource => (
+                                <div key={resource.id}>
+                                    <a href={`${resource.link}`} target="_blank" style={{ color: this.props.fontColor || "black" }} className="resources">{resource.name}</a>
+                                </div>
+                            ))}
+                        </div>
+                    ))}
+                </div>
+                {this.props.facebook != undefined && this.props.linkedin != undefined && this.props.instagram != undefined && this.props.twitter != undefined && this.props.pinterest != undefined && this.props.youtube != undefined ?
+                <div className="social-media-col">
+                    <div style={{ color: this.props.fontColor || "black" }} className="stay-connected-title">Stay connected</div>
+                    <div className="social-media">
+                        {this.props.facebook != undefined ? <a href={`https://www.facebook.com/${this.props.facebook}`} target="_blank" className="socialMediaLogo"><ImFacebook2 color={`${this.props.iconColor || "black" }`} size={25}/> </a> : ""}
+                        {this.props.linkedin != undefined ? <a href={`https://www.linkedin.com/in/${this.props.linkedin}`} target="_blank" className="socialMediaLogo"><FaTwitterSquare color={`${this.props.iconColor || "black" }`} size={25}/> </a> : ""}
+                        {this.props.instagram != undefined ? <a href={`https://www.instagram.com/${this.props.instagram}`} target="_blank" className="socialMediaLogo"><ImInstagram color={`${this.props.iconColor || "black" }`} size={25}/> </a> : ""}
+                        {this.props.twitter != undefined ? <a href={`https://www.twitter.com/${this.props.twitter}`} target="_blank" className="socialMediaLogo"><ImLinkedin color={`${this.props.iconColor || "black" }`} size={25}/> </a> : ""}
+                        {this.props.pinterest != undefined ? <a href={`https://www.pinterest.com/${this.props.pinterest}`} target="_blank" className="socialMediaLogo"><FaPinterestSquare color={`${this.props.iconColor || "black" }`} size={25}/> </a> : ""}
+                        {this.props.youtube != undefined ? <a href={`https://www.youtube.com/channel/${this.props.youtube}`} target="_blank" className="socialMediaLogo"><ImYoutube color={`${this.props.iconColor || "black" }`} size={25}/> </a> : ""}
+                    </div>
+                </div> : ""}
+
+                <div>
+                    <div style={{ color: this.props.copyrightColor || "grey" }} className="copyright">Copyright &copy; {this.props.copyright}</div>
+                </div>
+            </div>
+        )
+	}
 }
-export default Footer;
+
+SimpleReactFooter.propTypes = {
+    description: PropTypes.string,
+    linkedin: PropTypes.string,
+    instagram: PropTypes.string,
+    facebook: PropTypes.string,
+    linkedin: PropTypes.string,
+    youtube: PropTypes.string,
+    pinterest: PropTypes.string,
+    title: PropTypes.string,
+    columns: PropTypes.arrayOf(
+        PropTypes.shape({
+            title: PropTypes.string,
+            resources: PropTypes.arrayOf(
+                PropTypes.shape({
+                    name: PropTypes.string,
+                    link: PropTypes.string
+                })
+            )
+        })
+    ),
+    copyright: PropTypes.string,
+    iconColor: PropTypes.string,
+    backgroundColor: PropTypes.string,
+    fontColor: PropTypes.string,
+    copyrightColor: PropTypes.string
+};
+
+export default SimpleReactFooter;
