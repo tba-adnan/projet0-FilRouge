@@ -1,0 +1,16 @@
+../src/assets/css/bootstrap-datetimepicker-standalone.css
+../src/assets/css/bootstrap-datetimepicker.css
+../src/assets/css/bootstrap-datetimepicker.min.css
+../src/assets/css/bootstrap-select.css
+../src/assets/css/bootstrap-select.min.css
+../src/assets/css/bootstrap.css
+../src/assets/css/bootstrap.min.css
+../src/assets/css/costum-dev.css
+../src/assets/css/default.css
+../src/assets/css/documentation.css
+../src/assets/css/font-awesome.min.css
+../src/assets/css/monokai-sublime.css
+../src/assets/css/owl.carousel.min.css
+../src/assets/css/owl.theme.default.min.css
+../src/assets/css/theme.css
+../src/assets/css/theme.min.css

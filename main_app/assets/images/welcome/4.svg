@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1919px" height="950px" viewBox="0 0 1919 950" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>Group Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0.505687951%" y1="37.8639218%" x2="100%" y2="62.2600736%" id="linearGradient-1">
+            <stop stop-color="#0173EC" offset="0.0844594595%"></stop>
+            <stop stop-color="#743FE5" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-Copy">
+            <path d="M0,299.212598 L638.072115,900.629921 C1413.53769,845.976681 1840.34738,812.83426 1918.50117,801.202659 C1918.59489,801.188711 1918.55867,709.184361 1918.50117,709.171844 C1350.22797,560.942164 710.727578,424.289082 0,299.212598 Z" id="Path-13" fill="#EDF3FF"></path>
+            <polygon id="Path-12" fill="url(#linearGradient-1)" points="0 360.657523 900.692344 950 1918.50117 764.368752 1918.50117 0 0 0"></polygon>
+        </g>
+    </g>
+</svg>

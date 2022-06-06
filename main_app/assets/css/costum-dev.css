@@ -1,0 +1,34 @@
+body { font-family: 'Roboto', sans-serif; margin: 0 auto; max-width: 500px; }
+
+.cube-unit {
+  fill-opacity: .9;
+  stroke-miterlimit:0;
+}
+.blue-cube {
+  --mainColor: #009CDE;
+  --strokeColor: #0079ad;
+  --lightColor: #00affa;
+  --darkColor: #008bc7;
+}
+.pink-cube {
+  --mainColor: #de0063;
+  --strokeColor: #ad004e;
+  --lightColor: #fa0070;
+  --darkColor: #c7005a;
+}
+
+@keyframes moveX {
+  to { transform: translateX(var(--translate, 35px)); }
+}
+@keyframes moveY {
+  to { transform: translateY(var(--translate, -35px)); }
+}
+
+.m-left, .m-right { 
+  animation: 2s moveX alternate infinite paused; 
+}
+.m-up, .m-down { 
+  animation: 2s moveY alternate infinite paused; 
+}
+.m-left { --translate: -50px; }
+.m-right { --translate: 50px; }
