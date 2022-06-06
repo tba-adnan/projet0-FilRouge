@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/header';
-import Calls from './components/calls'; 
+// import Calls from './components/calls'; 
 import '../src/assets/css/bootstrap-datetimepicker-standalone.css';
 import '../src/assets/css/bootstrap-datetimepicker.css';
 import '../src/assets/css/bootstrap-datetimepicker.min.css';
@@ -25,7 +25,6 @@ function App() {
     <div className="App">
       <Header/>
       {/* <Footer /> */}
-      <Calls/>
     </div>
 
   );
