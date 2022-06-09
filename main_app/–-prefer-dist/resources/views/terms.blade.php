@@ -41,7 +41,7 @@
 					<div class="main-nav">
 						<!-- Logo Start -->
 						<a href="home/classic-agency.html" class="logo pull-left d-flex align-items-center">
-							<img src="assets/images/costum-images/Logo/Logo1v2.svg" alt="">
+							<img src=" {{URL::asset('eir-assets/images/costum-images/Logo/Logo1v2.svg'); }}" alt="">
 						</a>
 						<!-- Logo End -->
 
@@ -91,7 +91,7 @@
 
 	<!-- Page Start -->
 	<section class="p-b-120 m-t-80">
-		<img src="../assets/images/welcome/5-2.svg" class="img-fluid" alt="">
+		<img src=" {{URL::asset('eir-assets/images/welcome/5-2.svg'); }} " class="img-fluid" alt="">
 		<div class="container sm-m-t-120">
 			<div class="row">
 				<!-- left start -->
@@ -183,7 +183,7 @@
 			</div>
 			<div class="row m-b-30">
 				<div class="col-lg-5 col-md-12 col-sm-12">
-					<img src="assets/images/costum-images/Logo/Logo1v2.svg" class="m-b-20" alt="">
+					<img src=" {{URL::asset('eir-assets/images/costum-images/Logo/Logo1v2.svg'); }}" class="m-b-20" alt="">
 					<div class="text">Eir online Health & Pharmacie est une solution simple pour vous aider à organiser, rechercher et suivre vos médicaments. </div>
 				</div>
 				<div class="col-lg-2 col-md-4 col-sm-6 col-6">
@@ -227,22 +227,22 @@
 
 
 	<!-- jQuery -->
-	<script src="assets/js/jquery-2.1.0.min.js"></script>
+	<script src="assets/js/jquery-2.1.0.min.js {{URL::asset('eir-assets/images/costum-images/Logo/Logo1v2.svg'); }}"></script>
 	
 	<!-- Bootstrap -->
-	<script src="assets/js/popper.js"></script>
-	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/popper.js {{URL::asset('eir-assets/images/costum-images/Logo/Logo1v2.svg'); }}"></script>
+	<script src="assets/js/bootstrap.min.js {{URL::asset('eir-assets/images/costum-images/Logo/Logo1v2.svg'); }}"></script>
 
 	<!-- Plugins -->
-	<script src="assets/js/scrollreveal.min.js"></script>
-	<script src="assets/js/imgfix.min.js"></script>
-	<script src="assets/js/owl.carousel.min.js"></script>
-	<script src="assets/js/parallax.min.js"></script>
-	<script src="assets/js/waypoints.min.js"></script>
-	<script src="assets/js/jquery.counterup.min.js"></script>
-	<script src="assets/js/stickySidebar.js"></script>
+	<script src="assets/js/scrollreveal.min.js {{URL::asset('eir-assets/images/costum-images/Logo/Logo1v2.svg'); }}"></script>
+	<script src="assets/js/imgfix.min.js {{URL::asset('eir-assets/images/costum-images/Logo/Logo1v2.svg'); }}"></script>
+	<script src="assets/js/owl.carousel.min.js {{URL::asset('eir-assets/images/costum-images/Logo/Logo1v2.svg'); }}"></script>
+	<script src="assets/js/parallax.min.js {{URL::asset('eir-assets/images/costum-images/Logo/Logo1v2.svg'); }}"></script>
+	<script src="assets/js/waypoints.min.js {{URL::asset('eir-assets/images/costum-images/Logo/Logo1v2.svg'); }}"></script>
+	<script src="assets/js/jquery.counterup.min.js {{URL::asset('eir-assets/images/costum-images/Logo/Logo1v2.svg'); }}"></script>
+	<script src="assets/js/stickySidebar.js {{URL::asset('eir-assets/images/costum-images/Logo/Logo1v2.svg'); }}"></script>
 	
 	<!-- Global Init -->
-	<script src="assets/js/global.js"></script>
+	<script src="assets/js/global.js {{URL::asset('eir-assets/images/costum-images/Logo/Logo1v2.svg'); }}"></script>
 </body>
 </html>
