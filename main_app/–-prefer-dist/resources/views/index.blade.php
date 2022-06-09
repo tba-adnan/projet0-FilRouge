@@ -11,16 +11,18 @@
 	<meta name="author" content="tempload" />
 
 	<!-- Favicon -->
-	<link rel="icon" type="image/png" href="assets/images/costum-images/Logo/favicon.png " />
+	<!-- {{URL::asset('eir-assets/images/costum-images/Logo/favicon.png'); }} -->
+
+	<link rel="icon" type="image/png" href="{{URL::asset('eir-assets/images/costum-images/Logo/favicon.png'); }} " />
 
 	<!-- Bootstrap & Plugins CSS -->
-	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/owl.carousel.min.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+	<link href="{{URL::asset('eir-assets/css/bootstrap.min.css'); }}" rel="stylesheet" type="text/css">
+	<link href="{{URL::asset('eir-assets/css/font-awesome.min.css'); }}" rel="stylesheet" type="text/css">
+	<link href="{{URL::asset('eir-assets/css/owl.carousel.min.css'); }}" rel="stylesheet" type="text/css">
+	<link href="{{URL::asset('eir-assets/css/owl.theme.default.min.css'); }}" rel="stylesheet" type="text/css">
 
 	<!-- Custom CSS -->
-	<link href="assets/css/theme.css" rel="stylesheet" type="text/css">
+	<link href="{{URL::asset('eir-assets/css/theme.css'); }}" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -43,7 +45,7 @@
 					<div class="main-nav">
 						<!-- Logo Start -->
 						<a href="home/classic-agency.html" class="logo pull-left d-flex align-items-center">
-							<img src="assets/images/costum-images/Logo/Logo1v2.svg" alt="">
+							<img src="{{URL::asset('eir-assets/images/costum-images/Logo/Logo1v2.svg'); }}" alt="">
 						</a>
 						<!-- Logo End -->
 
@@ -55,16 +57,16 @@
 									<a class="nav-link submenu-icon" href="#">Home</a>
 									<ul class="sub-menu list-unstyled box rounded-bottom">
 										<li class="sub-menu-item">
-											<a href="../blog/card-style.html" class="sub-menu-link">Connexion</a>
+											<a href="#" class="sub-menu-link">Connexion</a>
 										</li>
 										<li class="sub-menu-item">
-											<a href="../blog/list-style.html" class="sub-menu-link">Blog</a>
+											<a href="#" class="sub-menu-link">Blog</a>
 										</li>
 										<li class="sub-menu-item">
 											<a href="../blog/profile.html" class="sub-menu-link">News Letter</a>
 										</li>
 										<li class="sub-menu-item">
-											<a href="terms-conditions.html" class="sub-menu-link">Terms et
+											<a href="/terms" class="sub-menu-link">Terms et
 												Conditions</a>
 										</li>
 									</ul>
@@ -95,10 +97,10 @@
 	<section class="welcome-overlay d-flex align-items-center m-t-80">
 		<div class="background">
 			<div class="bg-image imgfix overlay-gradient opacity-70">
-				<img src="assets/images/costum-images/slide-x1.webp" alt="">
+				<img src="eir-assets/images/costum-images/slide-x1.webp" alt="">
 			</div>
 			<div class="bg-1">
-				<img src="assets/images/welcome/1.svg" alt="">
+				<img src="eir-assets/images/welcome/1.svg " alt="">
 			</div>
 		</div>
 		<div class="content">
@@ -135,21 +137,21 @@
 			<div class="row">
 				<div class="col-lg-4 col-md-4 col-sm-12 text-center m-b-50"
 					data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
-					<img src="assets/images/costum-images/slide1.svg" class="m-b-30" alt="">
+					<img src="eir-assets/images/costum-images/slide1.svg" class="m-b-30" alt="">
 					<h5 class="m-b-10">Des millions de données médicales.</h5>
 					<p class="m-b-20">Nous vous offrons un accès complet et rapide à des données authentiques provenant de sources autorisées..</p>
 					<a href="#" class="button button-primary-soft transition-3d-hover">Read More</a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-12 text-center m-b-50"
 					data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
-					<img src="assets/images/costum-images/slide2.svg" class="m-b-30" alt="">
+					<img src="eir-assets/images/costum-images/slide2.svg" class="m-b-30" alt="">
 					<h5 class="m-b-10">Je vous informe de vos cosumptions.</h5>
 					<p class="m-b-20">Obtenez des analyses historiques sur un certain médicament.</p>
 					<a href="#" class="button button-primary-soft transition-3d-hover">Read More</a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-12 text-center m-b-50"
 					data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
-					<img src="assets/images/costum-images/slide3.svg" class="m-b-30" alt="">
+					<img src="eir-assets/images/costum-images/slide3.svg" class="m-b-30" alt="">
 					<h5 class="m-b-10">Soyez en bonne santé!</h5>
 					<p class="m-b-20">Recevez des courriels informatifs comprenant des mises à jour sur vos médecins.</p>
 					<a href="#" class="button button-primary-soft transition-3d-hover">Read More</a>
@@ -168,19 +170,19 @@
 					<div class="row">
 						<div class="col-6">
 							<!-- <div class="h-small rounded overflow-hidden imgfix-animate m-b-30" data-scroll-reveal="enter left move 50px over 0.6s after 0.2s">
-								<img src="assets/images/costum-images/slide-x1.webp" alt="">
+								<img src="eir-assets/images/costum-images/slide-x1.webp" alt="">
 							</div>
 							<div class="h-large rounded overflow-hidden imgfix-animate" data-scroll-reveal="enter left move 50px over 0.6s after 0.2s">
-								<img src="assets/images/costum-images/slide-x1.webp" alt="">
+								<img src="eir-assets/images/costum-images/slide-x1.webp" alt="">
 							</div> -->
-							<img src="assets/images/costum-images/slide-x2v3.gif" width="650" alt="">
+							<img src="eir-assets/images/costum-images/slide-x2v3.gif" width="650" alt="">
 						</div>
 						<div class="col-6">
 							<!-- <div class="h-large rounded overflow-hidden imgfix-animate m-b-30" data-scroll-reveal="enter right move 50px over 0.6s after 0.2s">
-								<img src="assets/images/costum-images/slide-x1.webp" alt="">
+								<img src="eir-assets/images/costum-images/slide-x1.webp" alt="">
 							</div>
 							<div class="h-small rounded overflow-hidden imgfix-animate" data-scroll-reveal="enter right move 50px over 0.6s after 0.2s">
-								<img src="assets/images/costum-images/slide-x1.webp" alt="">
+								<img src="eir-assets/images/costum-images/slide-x1.webp" alt="">
 							</div> -->
 
 						</div>
@@ -234,7 +236,7 @@
 	</section>
 	<!-- About End -->
 	<!-- Parallax Start -->
-	<section class="parallax overlay-gradient opacity-70" data-image-src="assets/images/costum-images/slide-x1.webp">
+	<section class="parallax overlay-gradient opacity-70" data-image-src="eir-assets/images/costum-images/slide-x1.webp">
 		<div class="content">
 			<div class="container">
 				<div class="row text-center">
@@ -259,11 +261,11 @@
 			</div>
 			<div class="row m-b-30">
 				<div class="col-lg-5 col-md-12 col-sm-12">
-					<img src="assets/images/costum-images/Logo/Logo1v2.svg" class="m-b-20" alt="">
+					<img src="eir-assets/images/costum-images/Logo/Logo1v2.svg" class="m-b-20" alt="">
 					<div class="text">Eir online Health & Pharmacie est une solution simple pour vous aider à organiser, rechercher et suivre vos médicaments. </div>
 				</div>
 				<div class="col-lg-2 col-md-4 col-sm-6 col-6">
-					<h6 class="m-b-10">Helpful Links</h6>
+					<h6 class="m-b-10">Helpful Links : </h6>
 					<ul class="footer-nav list-unstyled">
 						<li><a href="#"><i class="fa fa-angle-right"></i><span>Connexion</span></a></li>
 						<li><a href="#"><i class="fa fa-angle-right"></i><span>S'inscrire</span></a></li>
@@ -271,6 +273,7 @@
 						<li><a href="#"><i class="fa fa-angle-right"></i><span>News Letter</span></a></li>
 						<li><a href="#"><i class="fa fa-angle-right"></i><span>Contactez-nous</span></a></li>
 						<li><a href="terms-conditions.html"><i class="fa fa-angle-right"></i><span>Termes</span></a></li>
+						<li><a href="/administrator"><i class="fa fa-angle-right"></i><span>🔒</span></a></
 					</ul>
 				</div>
 				<!-- <div class="col-lg-2 col-md-4 col-sm-6 col-6">
@@ -284,7 +287,7 @@
 					</ul>
 				</div> -->
 				<div class="col-lg-3 col-md-4 col-sm-12">
-					<h6 class="m-b-10">Contact Us</h6>
+					<h6 class="m-b-10">Contact Us : </h6>
 					<div class="address">
 						<p>42, Lot Hind - Casabarata, 9901<br>Tangier, Kingdom of Morocco.</p>
 						<p>Phone: (212)</p>
@@ -303,27 +306,26 @@
 
 
 	<!-- jQuery -->
-	<script src="assets/js/jquery-2.1.0.min.js"></script>
+	<script src="eir-assets/js/jquery-2.1.0.min.js"></script>
 
 	<!-- Bootstrap -->
-	<script src="assets/js/popper.js"></script>
-	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="eir-assets/js/popper.js"></script>
+	<script src="eir-assets/js/bootstrap.min.js"></script>
 
 	<!-- Plugins -->
-	<script src="assets/js/scrollreveal.min.js"></script>
-	<script src="assets/js/imgfix.min.js"></script>
-	<script src="assets/js/owl.carousel.min.js"></script>
-	<script src="assets/js/parallax.min.js"></script>
-	<script src="assets/js/waypoints.min.js"></script>
-	<script src="assets/js/jquery.counterup.min.js"></script>
+	<script src="eir-assets/js/scrollreveal.min.js"></script>
+	<script src="eir-assets/js/imgfix.min.js"></script>
+	<script src="eir-assets/js/owl.carousel.min.js"></script>
+	<script src="eir-assets/js/parallax.min.js"></script>
+	<script src="eir-assets/js/waypoints.min.js"></script>
+	<script src="eir-assets/js/jquery.counterup.min.js"></script>
 
 	<!-- Global Init -->
-	<script src="assets/js/global.js"></script>
+	<script src="eir-assets/js/global.js"></script>
 
 	<!-- Green Sock - Gsap -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 </body>
-
 </html>
 
 <!-- <script src="../assests/js/bootstrap.js"></script>

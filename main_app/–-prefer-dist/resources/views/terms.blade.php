@@ -10,27 +10,27 @@
 	<meta name="author" content="tempload" />
 
 	<!-- Favicon -->
-	<link rel="icon" type="image/png" href="/assets/images/favicon/favicon.png" />
+	<link rel="icon" type="image/png" href="{{URL::asset('eir-assets/images/costum-images/Logo/favicon.png'); }}" />
 
 	<!-- Bootstrap & Plugins CSS -->
-	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/owl.carousel.min.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+	<link href=" {{URL::asset('eir-assets/css/bootstrap.min.css'); }}" rel="stylesheet" type="text/css">
+	<link href=" {{URL::asset('eir-assets/css/font-awesome.min.csseir-assets/images/costum-images/Logo/favicon.png'); }}" rel="stylesheet" type="text/css">
+	<link href=" {{URL::asset('eir-assets/css/owl.carousel.min.css'); }}" rel="stylesheet" type="text/css">
+	<link href=" {{URL::asset('eir-assets/css/owl.theme.default.min.css'); }}" rel="stylesheet" type="text/css">
 
 	<!-- Custom CSS -->
-	<link href="assets/css/theme.css" rel="stylesheet" type="text/css">
+	<link href=" {{URL::asset('eir-assets/css/theme.css '); }}" rel="stylesheet" type="text/css">
 </head>
 <body class="overflow-unset">
 
 
 	<!-- ***** Preloader Start ***** -->
-	<div id="preloader">
+	<!-- <div id="preloader">
 		<div id="loader" class="spinner">
 			<div id="shadow"></div>
 			<div id="box"></div>
 		</div>
-	</div>
+	</div> -->
 	<!-- ***** Preloader End ***** -->
 
 	<!-- Header Start -->
