@@ -57,7 +57,7 @@
 									<a class="nav-link submenu-icon" href="#">Home</a>
 									<ul class="sub-menu list-unstyled box rounded-bottom">
 										<li class="sub-menu-item">
-											<a href="#" class="sub-menu-link">Connexion</a>
+											<a href="#" class="sub-menu-link">S'inscrire</a>
 										</li>
 										<li class="sub-menu-item">
 											<a href="#" class="sub-menu-link">Blog</a>
@@ -75,8 +75,8 @@
 								<!-- tba - Join Now Entry. -->
 								<li class="menu-item d-none d-lg-block">
 									<a class="nav-button transition-3d-hover"
-										href="https://themeforest.net/item/bodrum-modular-multi-purpose-html5-template/25649533"
-										target="_blank">Login</a>
+										href="/"
+										target="_blank">Connexion</a>
 								</li>
 							</ul>
 						</nav>
@@ -112,7 +112,7 @@
 						</p>
 						<div class="buttons d-flex align-items-center">
 							<a href="#"
-								class="button button-primary transition-3d-hover m-r-30 sm-m-r-0">Join Now!</a>
+								class="button button-primary transition-3d-hover m-r-30 sm-m-r-0">S'inscrire!</a>
 							<!-- <a href="#" class="video-button oval">
 								<div class="play"><i class="fa fa-play"></i></div>
 								<span>Watch Video</span>

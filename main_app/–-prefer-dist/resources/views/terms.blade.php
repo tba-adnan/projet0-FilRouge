@@ -43,16 +43,16 @@
 									<a class="nav-link" href="#">Home</a>
 									<ul class="sub-menu list-unstyled box rounded-bottom">
 										<li class="sub-menu-item">
-											<a href="../blog/card-style.html" class="sub-menu-link">Connexion</a>
+											<a href="#" class="sub-menu-link">S'inscrire</a>
 										</li>
 										<li class="sub-menu-item">
-											<a href="../blog/list-style.html" class="sub-menu-link">Blog</a>
+											<a href="#" class="sub-menu-link">Blog</a>
 										</li>
 										<li class="sub-menu-item">
-											<a href="../blog/profile.html" class="sub-menu-link">News Letter</a>
+											<a href="#" class="sub-menu-link">News Letter</a>
 										</li>
 										<li class="sub-menu-item">
-											<a href="../blog/single-article.html" class="sub-menu-link">Terms et
+											<a href="#" class="sub-menu-link">Terms et
 												Conditions</a>
 										</li>
 									</ul>
@@ -61,8 +61,8 @@
 								<!-- tba - Join Now Entry. -->
 								<li class="menu-item d-none d-lg-block">
 									<a class="nav-button transition-3d-hover"
-										href="https://themeforest.net/item/bodrum-modular-multi-purpose-html5-template/25649533"
-										target="_blank">Login</a>
+										href="/"
+										target="_blank">Connexion</a>
 								</li>
 							</ul>
 						</nav>
@@ -87,59 +87,28 @@
 				<!-- left start -->
 				<div class="col-lg-9">
 					<div id="content">
-						<h1 class="m-b-10">Terms & Conditions</h1>
+						<h1 class="m-b-10">Terms & Conditions : </h1>
 						<div class="bg-primary d-inline-block p-20 p-t-5 p-b-5 rounded m-b-40">
-							<span class="text-white">Last update: 1 January 2020</span>
+							<span class="text-white">Dernière mise à jour: 10 Juin 2022</span>
 						</div>
 						<div class="divider m-b-40"></div>
 
 						<div class="text-content">
-							<h5>Welcome to Bodrum</h5>
-							<p>Quisque est nisi, eleifend tristique congue non, sagittis quis justo. In blandit hendrerit magna, sit amet ullamcorper sapien. Suspendisse potenti. Vivamus eu lacus ut nulla dapibus malesuada nec et libero. Ut ultrices risus id eleifend sagittis.</p>
+							<h5>Bienvenue sur eir : </h5>
+							<p>Eir online Health & Pharmacie est une solution simple pour vous aider à organiser, rechercher et suivre vos médicaments..</p>
 
-							<h5 id="1">1. What are Terms and Conditions</h5>
-							<p>Sed non dui aliquam, ullamcorper est non, aliquet mauris. Quisque lacus ligula, dapibus nec dignissim non, tincidunt vel quam. Etiam porttitor iaculis odio.</p>
-							<p>Cras sagittis nunc lectus, in condimentum ligula ornare at. Etiam sagittis malesuada nisl. Duis volutpat ligula ante. Sed cursus, tortor a pellentesque pulvinar, lorem ipsum gravida elit, id posuere elit neque in est. Mauris ex justo, tincidunt at suscipit quis, pretium a mi.</p>
-							<p>Quisque consequat nisl nulla, dignissim gravida ipsum ultrices et. Morbi pharetra non massa at cursus. Vivamus convallis dui eu nisl blandit, vel convallis nisi dapibus.</p>
+							<h5 id="1">Sur nos termes et conditions : </h5>
+							<p>Contribuez à protéger votre site web et ses utilisateurs grâce à des conditions générales claires et équitables. Les conditions générales d'un site web définissent des questions essentielles telles que l'utilisation acceptable, la confidentialité, les cookies, l'enregistrement et les mots de passe, la propriété intellectuelle, les liens vers d'autres sites, la résiliation et les décharges de responsabilité. Les conditions générales sont utilisées et nécessaires pour protéger le propriétaire d'un site web de la responsabilité d'un utilisateur se fiant aux informations ou aux biens fournis par le site et subissant ensuite une perte.
 
-							<h6 id="2">A. What to include in a Terms and Conditions</h6>
-							<p>Etiam rhoncus quis eros eget fringilla. Etiam malesuada enim laoreet nibh euismod, eu finibus elit finibus. Duis ornare tempus purus. Nam at leo quis tortor congue dignissim.</p>
-							<p>Sed non varius erat. Nulla vel nibh eu risus cursus vulputate nec ac elit.</p>
+Il est difficile, mais pas impossible, de rédiger vos propres conditions générales pour votre site web. Cela peut prendre de quelques heures à quelques jours pour une personne sans formation juridique. Mais ne vous inquiétez plus, nous sommes là pour vous aider.
 
-							<h6 id="3">B. Is a Terms and Conditions required?</h6>
-							<p>Esoim efficitur vestibulum molestie. Nam urna justo, ornare commodo sem eget, pretium lobortis nisi. Curabitur ac felis pharetra nunc molestie semper quis eu mauris. Aliquam mollis, arcu in blandit cursus, lacus est aliquam dui, vitae suscipit orci massa suscipit metus.</p>
-							<p>Duis faucibus, lorem eget rutrum dictum, arcu erat elementum metus, id rutrum mauris mi ut sapien. Mauris in facilisis ante. Integer sed ante tristique augue eleifend eleifend sed tristique tellus. Vestibulum vehicula nisi eget ipsum sollicitudin porttitor.</p>
+Tout ce que vous avez à faire est de remplir les espaces vides et vous recevrez un email avec vos termes et conditions personnalisés.
 
-							<h5 id="4">2. Examples of Terms and Conditions</h5>
-							<p>Proin commodo aliquam elit eu dignissim. Pellentesque id maximus elit. Nunc ultrices rutrum odio, ut pulvinar erat ultrices vitae. Nunc nec odio eget lacus vehicula suscipit ac in elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer sit amet tincidunt ante.</p>
-							<p>Aliquam scelerisque dictum tortor, nec tristique augue luctus at. Nulla vel bibendum eros. Ut efficitur, sapien ac maximus fringilla, erat nunc aliquam dui, <a href="#">auctor commodo</a> lacus ipsum ac sapien. Nullam a ex vitae tellus congue consectetur consequat non velit.</p>
-							<p>Maecenas lobortis sapien eget tellus blandit congue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam gravida commodo justo, ut fermentum sapien lobortis et.</p>
-
-							<h5 id="5">3. Your content in our services</h5>
-							<p>Integer vel dictum felis, vitae gravida sem. Suspendisse quis auctor nibh. Quisque accumsan lectus dictum, efficitur magna eu, malesuada lacus. Aliquam fermentum, justo eget consequat maximus, nunc purus posuere ex, ac scelerisque ante est nec nibh.</p>
-							<p>Morbi scelerisque imperdiet mi, in cursus tortor sollicitudin ac. Praesent eget congue augue. Mauris facilisis a arcu vitae dictum. Vivamus quis tellus ut urna commodo porttitor a vel magna.</p>
+</p>
 						</div>
 					</div>
 				</div>
 				<!-- left end -->
-
-				<!-- right start -->
-				<div class="col-lg-3">
-					<div class="box rounded p-25 m-b-30" id="sidebar">
-						<ul class="list-unstyled">
-							<li class="m-b-10">
-								<a class="text-color-reset f-s-14" href="#1">1. What are Terms and Conditions</a>
-								<ul class="list-unstyled m-l-30">
-									<li class="m-b-10 m-t-10"><a class="text-color-reset f-s-14" href="#2">A. What to include in a Terms and Conditions</a></li>
-									<li class="m-b-10"><a class="text-color-reset f-s-14" href="#3">B. Is a Terms and Conditions required?</a></li>
-								</ul>
-							</li>
-							<li class="m-b-10"><a class="text-color-reset f-s-14" href="#4">2. Examples of Terms and Conditions</a></li>
-							<li class="m-b-10"><a class="text-color-reset f-s-14" href="#5">3. Your content in our services</a></li>
-						</ul>
-					</div>
-				</div>
-				<!-- right end -->
 			</div>
 		</div>
 	</section>
