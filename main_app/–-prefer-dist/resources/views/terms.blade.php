@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Bodrum - Modular Multi Purpose HTML5 Template</title>
+	<title>Eir</title>
 	<meta name="description" content="Bodrum - Modular Multi Purpose HTML5 template by tempload." />
 	<meta name="keywords" content="bodrum, startup, saas, agency, development, html, template, tempload" />
 	<meta name="author" content="tempload" />
@@ -23,24 +23,14 @@
 </head>
 <body class="overflow-unset">
 
-
-	<!-- ***** Preloader Start ***** -->
-	<!-- <div id="preloader">
-		<div id="loader" class="spinner">
-			<div id="shadow"></div>
-			<div id="box"></div>
-		</div>
-	</div> -->
-	<!-- ***** Preloader End ***** -->
-
-	<!-- Header Start -->
+<!-- Header Start -->
 	<header class="main-nav-container box">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="main-nav">
 						<!-- Logo Start -->
-						<a href="home/classic-agency.html" class="logo pull-left d-flex align-items-center">
+						<a href="/" class="logo pull-left d-flex align-items-center">
 							<img src="{{URL::asset('eir-assets/images/costum-images/Logo/Logo1v2.svg'); }}" alt="">
 						</a>
 						<!-- Logo End -->
@@ -50,16 +40,16 @@
 							<ul class="menu-container list-unstyled d-flex align-items-center">
 								<!-- Mega Menu Start -->
 								<li class="menu-item open-sub-menu">
-									<a class="nav-link submenu-icon" href="#">Home</a>
+									<a class="nav-link" href="#">Home</a>
 									<ul class="sub-menu list-unstyled box rounded-bottom">
 										<li class="sub-menu-item">
-											<a href="../blog/card-style.html" class="sub-menu-link">Blog</a>
+											<a href="../blog/card-style.html" class="sub-menu-link">Connexion</a>
 										</li>
 										<li class="sub-menu-item">
-											<a href="../blog/list-style.html" class="sub-menu-link">News Letter</a>
+											<a href="../blog/list-style.html" class="sub-menu-link">Blog</a>
 										</li>
 										<li class="sub-menu-item">
-											<a href="../blog/profile.html" class="sub-menu-link">Connexion</a>
+											<a href="../blog/profile.html" class="sub-menu-link">News Letter</a>
 										</li>
 										<li class="sub-menu-item">
 											<a href="../blog/single-article.html" class="sub-menu-link">Terms et
@@ -187,14 +177,14 @@
 					<div class="text">Eir online Health & Pharmacie est une solution simple pour vous aider à organiser, rechercher et suivre vos médicaments. </div>
 				</div>
 				<div class="col-lg-2 col-md-4 col-sm-6 col-6">
-					<h6 class="m-b-10">Helpful Links</h6>
+					<h6 class="m-b-10">Helpful Links : </h6>
 					<ul class="footer-nav list-unstyled">
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Connexion</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>S'inscrire</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Blog</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>News Letter</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Contactez-nous</span></a></li>
-						<li><a href="terms-conditions.html"><i class="fa fa-angle-right"></i><span>Termes</span></a></li>
+						<li><a href="#"><i class="fa fa-angle-right"></i><span>> Connexion</span></a></li>
+						<li><a href="#"><i class="fa fa-angle-right"></i><span>> S'inscrire</span></a></li>
+						<li><a href="#"><i class="fa fa-angle-right"></i><span>> Blog</span></a></li>
+						<li><a href="#"><i class="fa fa-angle-right"></i><span>> News Letter</span></a></li>
+						<li><a href="#"><i class="fa fa-angle-right"></i><span>> Contactez-nous</span></a></li>
+						<li><a href="terms-conditions.html"><i class="fa fa-angle-right"></i><span>> Termes</span></a></li>
 					</ul>
 				</div>
 				<!-- <div class="col-lg-2 col-md-4 col-sm-6 col-6">
@@ -208,7 +198,7 @@
 					</ul>
 				</div> -->
 				<div class="col-lg-3 col-md-4 col-sm-12">
-					<h6 class="m-b-10">Contact Us</h6>
+					<h6 class="m-b-10">Contact Us : </h6>
 					<div class="address">
 						<p>42, Lot Hind - Casabarata, 9901<br>Tangier, Kingdom of Morocco.</p>
 						<p>Phone: (212)</p>

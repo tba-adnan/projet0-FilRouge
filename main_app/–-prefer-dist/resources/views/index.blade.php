@@ -44,7 +44,7 @@
 				<div class="col-lg-12">
 					<div class="main-nav">
 						<!-- Logo Start -->
-						<a href="home/classic-agency.html" class="logo pull-left d-flex align-items-center">
+						<a href="/" class="logo pull-left d-flex align-items-center">
 							<img src="{{URL::asset('eir-assets/images/costum-images/Logo/Logo1v2.svg'); }}" alt="">
 						</a>
 						<!-- Logo End -->
@@ -63,7 +63,7 @@
 											<a href="#" class="sub-menu-link">Blog</a>
 										</li>
 										<li class="sub-menu-item">
-											<a href="../blog/profile.html" class="sub-menu-link">News Letter</a>
+											<a href="/news" class="sub-menu-link">News Letter</a>
 										</li>
 										<li class="sub-menu-item">
 											<a href="/terms" class="sub-menu-link">Terms et
@@ -276,16 +276,6 @@
 						<li><a href="/administrator"><i class="fa fa-angle-right"></i><span>🔒</span></a></
 					</ul>
 				</div>
-				<!-- <div class="col-lg-2 col-md-4 col-sm-6 col-6">
-					<h6 class="m-b-10">Services</h6>
-					<ul class="footer-nav list-unstyled">
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Worldwide</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Scalable</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Modular</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Connectivity</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Corporate</span></a></li>
-					</ul>
-				</div> -->
 				<div class="col-lg-3 col-md-4 col-sm-12">
 					<h6 class="m-b-10">Contact Us : </h6>
 					<div class="address">
