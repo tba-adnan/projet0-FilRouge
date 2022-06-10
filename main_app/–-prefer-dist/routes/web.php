@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
+// Route::get('/cutie', function () {
 //     return view('welcome');
 // });
 
@@ -25,3 +25,12 @@ Route::get('/terms', function () {
     return view('terms');
 });
 
+
+Auth::routes();
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+// Route::view('register','register');
+// Route::view('login','login');
+// Route::post('registerUser','RestoController@registerUser');
+// Route::post('loginUser','RestoController@login');

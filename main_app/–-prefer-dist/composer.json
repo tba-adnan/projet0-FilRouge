@@ -15,6 +15,7 @@
         "laravel/framework": "^9.11",
         "laravel/sanctum": "^2.14.1",
         "laravel/tinker": "^2.7",
+        "laravel/ui": "^3.4",
         "rezaamini-ir/laravel-easypanel": "^2.1"
     },
     "require-dev": {
