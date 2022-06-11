@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Eir</title>
+	<title>Eir - Connexion</title>
 	<meta name="description" content="Bodrum - Modular Multi Purpose HTML5 template by tempload." />
 	<meta name="keywords" content="bodrum, startup, saas, agency, development, html, template, tempload" />
 	<meta name="author" content="tempload" />
@@ -54,10 +54,10 @@
 							<ul class="menu-container list-unstyled d-flex align-items-center">
 								<!-- Mega Menu Start -->
 								<li class="menu-item open-sub-menu">
-									<a class="nav-link submenu-icon" href="#">Home</a>
+									<a class="nav-link submenu-icon" href="/">Home</a>
 									<ul class="sub-menu list-unstyled box rounded-bottom">
 										<li class="sub-menu-item">
-											<a href="#" class="sub-menu-link">S'inscrire</a>
+											<a href="/register" class="sub-menu-link">S'inscrire</a>
 										</li>
 										<li class="sub-menu-item">
 											<a href="#" class="sub-menu-link">Blog</a>
@@ -89,11 +89,9 @@
 			</div>
 		</div>
 	</header>
+	<br>
 	<!-- Header End -->
-
-    <div>
-        <hr>
-    </div>
+    
 @section('content')
 
 
@@ -101,14 +99,14 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+                <div class="card-header">{{ __('Connexion : ') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
                         <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
+                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email : ') }}</label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
@@ -122,7 +120,7 @@
                         </div>
 
                         <div class="row mb-3">
-                            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
+                            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Mot de passe : ') }}</label>
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
@@ -141,7 +139,7 @@
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
                                     <label class="form-check-label" for="remember">
-                                        {{ __('Remember Me') }}
+                                        {{ __('Mémoriser mon identifiant') }}
                                     </label>
                                 </div>
                             </div>
@@ -150,12 +148,12 @@
                         <div class="row mb-0">
                             <div class="col-md-8 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
+                                    {{ __('Connexion') }}
                                 </button>
 
                                 @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
+                                        {{ __('Mot de passe oublié?') }}
                                     </a>
                                 @endif
                             </div>
@@ -167,7 +165,6 @@
     </div>
 </div>
 
-<hr>
 	<!-- Footer Start -->
 	<footer class="footer">
 		<div class="container">

@@ -57,7 +57,7 @@
 									<a class="nav-link submenu-icon" href="#">Home</a>
 									<ul class="sub-menu list-unstyled box rounded-bottom">
 										<li class="sub-menu-item">
-											<a href="#" class="sub-menu-link">S'inscrire</a>
+											<a href="/register" class="sub-menu-link">S'inscrire</a>
 										</li>
 										<li class="sub-menu-item">
 											<a href="#" class="sub-menu-link">Blog</a>
@@ -75,7 +75,7 @@
 								<!-- tba - Join Now Entry. -->
 								<li class="menu-item d-none d-lg-block">
 									<a class="nav-button transition-3d-hover"
-										href="/"
+										href="/login"
 										target="_blank">Connexion</a>
 								</li>
 							</ul>
@@ -111,7 +111,7 @@
 						<p class="m-b-40">Obtenez des données sur vos médicaments rapidement et facilement!
 						</p>
 						<div class="buttons d-flex align-items-center">
-							<a href="#"
+							<a href="/register"
 								class="button button-primary transition-3d-hover m-r-30 sm-m-r-0">S'inscrire!</a>
 							<!-- <a href="#" class="video-button oval">
 								<div class="play"><i class="fa fa-play"></i></div>
@@ -244,7 +244,7 @@
 						<div class="header-badge-black m-b-15">Qu'est-ce que vous attendez?</div>
 						<h1 class="display-4 text-white m-b-40">Inscrivez-vous à <strong>Eir </strong>maintenant!
 						</h1>
-						<a href="#" class="button button-primary transition-3d-hover">S'inscrire!</a>
+						<a href="/register" class="button button-primary transition-3d-hover">S'inscrire!</a>
 					</div>
 				</div>
 			</div>
@@ -267,11 +267,11 @@
 				<div class="col-lg-2 col-md-4 col-sm-6 col-6">
 					<h6 class="m-b-10">Helpful Links : </h6>
 					<ul class="footer-nav list-unstyled">
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Connexion</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>S'inscrire</span></a></li>
+						<li><a href="/login"><i class="fa fa-angle-right"></i><span>Connexion</span></a></li>
+						<li><a href="/register"><i class="fa fa-angle-right"></i><span>S'inscrire</span></a></li>
 						<li><a href="#"><i class="fa fa-angle-right"></i><span>Blog</span></a></li>
 						<li><a href="#"><i class="fa fa-angle-right"></i><span>News Letter</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Contactez-nous</span></a></li>
+						<!-- <li><a href="#"><i class="fa fa-angle-right"></i><span>Contactez-nous</span></a></li> -->
 						<li><a href="terms-conditions.html"><i class="fa fa-angle-right"></i><span>Termes</span></a></li>
 						<li><a href="/administrator"><i class="fa fa-angle-right"></i><span>🔒</span></a></
 					</ul>
