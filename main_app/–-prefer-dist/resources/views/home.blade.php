@@ -60,7 +60,7 @@
 						</nav>
 						<!-- Navigation End -->
 						<a class="menu-trigger">
-							<span>Menu</span>
+							<span>Menu  </span>
 						</a>
 					</div>
 				</div>
@@ -70,26 +70,6 @@
 	<br>
 
 @section('content')
-<!-- <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-
 
 <div class="container">
 
@@ -98,11 +78,9 @@
               <div class="col-md-6">
 
                 <div class="form">
-                  <!-- <i class="fa fa-search"></i> -->
-                  <input type="text" class="form-control form-input" placeholder="Recherche de médecins...">
-                  <!-- <span class="left-pan"><i class="fa fa-microphone"></i></span> -->
+                  <input type="text" class="form-control form-input" placeholder="Recherche de médicaments...">
                 </div>
-                
+                <h1>{{$cat}}</h1>
               </div>
               
             </div>
