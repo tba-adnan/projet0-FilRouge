@@ -26,6 +26,8 @@
 	<link href="{{URL::asset('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'); }}" rel="stylesheet" type="text/css">
 </head>
 <body>
+
+
 	<!-- ***** Preloader Start ***** -->
 	<!-- <div id="preloader">
 		<div id="loader" class="spinner">
@@ -80,7 +82,14 @@
                 <div class="form">
                   <input type="text" class="form-control form-input" placeholder="Recherche de médicaments...">
                 </div>
-                <h1>test</h1>
+                {{-- <h1>{{$ppv}}</h1> --}}
+				<br>
+				@foreach ($data as $item)
+				<div class="alert alert-primary" role="alert">
+					{{$item["_source"]["name"] }}
+				  </div>
+				@endforeach
+			
               </div>
               
             </div>
