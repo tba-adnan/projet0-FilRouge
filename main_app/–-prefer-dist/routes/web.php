@@ -30,8 +30,8 @@ Route::get('/terms', function () {
 
 Auth::routes();
 
-route::get('/home',[HomeController::class,'index'])->name('home');
-route::get("/home/{$keyword}",[HomeController::class,'search'])->name('home');
+route::get('/home',[HomeController::class,'search'])->name('home');
+// route::get("/home/{$keyword}",[HomeController::class,'search'])->name('home');
 
 
 

@@ -1,0 +1,10 @@
+{
+    "name": "users",
+    "namespace": "Modules\\Users\\",
+    "providers": [
+        "Modules\\Users\\Providers\\UsersServiceProvider",
+        "Modules\\Users\\Providers\\EventServiceProvider",
+        "Modules\\Users\\Providers\\RouteServiceProvider"
+    ],
+    "status": "enabled"
+}

@@ -7,6 +7,8 @@
 
 ## Going agile : 
 
-leopold36@example.com:password
+admin : adnane@eir.io:password
+
+demo account : **myemail**gmail.com:superuser
 
 [**Jira instance.**](https://tb-adn.atlassian.net/)

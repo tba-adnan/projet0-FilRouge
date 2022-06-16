@@ -79,7 +79,7 @@
 				<form action="/home" method="GET">
                 <div class="form">
 					
-                  <input type="text" class="form-control form-input" placeholder="Recherche des médicaments...">
+                  <input type="text" name="search" class="form-control form-input" placeholder="Recherche des médicaments...">
 				  <button type=submit>search</button>
                 </div>
 				</form>
