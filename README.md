@@ -7,4 +7,6 @@
 
 ## Going agile : 
 
+leopold36@example.com:password
+
 [**Jira instance.**](https://tb-adn.atlassian.net/)

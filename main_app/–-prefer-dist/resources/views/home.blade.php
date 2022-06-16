@@ -80,7 +80,7 @@
                 <div class="form">
                   <input type="text" class="form-control form-input" placeholder="Recherche de médicaments...">
                 </div>
-                <h1>{{$cat}}</h1>
+                <h1>test</h1>
               </div>
               
             </div>
