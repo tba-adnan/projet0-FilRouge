@@ -26,8 +26,6 @@
 	<link href="{{URL::asset('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'); }}" rel="stylesheet" type="text/css">
 </head>
 <body>
-
-
 	<!-- ***** Preloader Start ***** -->
 	<!-- <div id="preloader">
 		<div id="loader" class="spinner">
@@ -35,7 +33,6 @@
 			<div id="box"></div>
 		</div>
 	</div> -->
-
 	<!-- Pre-Load Disabled -->
 	<!-- ***** Preloader End ***** -->
 	<!-- Header Start -->
@@ -79,9 +76,13 @@
 
               <div class="col-md-6">
 
+				<form action="/home" method="GET">
                 <div class="form">
-                  <input type="text" class="form-control form-input" placeholder="Recherche de médicaments...">
+					
+                  <input type="text" class="form-control form-input" placeholder="Recherche des médicaments...">
+				  <button type=submit>search</button>
                 </div>
+				</form>
                 {{-- <h1>{{$ppv}}</h1> --}}
 				<br>
 				@foreach ($data as $item)

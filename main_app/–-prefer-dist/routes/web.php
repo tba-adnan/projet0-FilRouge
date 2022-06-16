@@ -31,9 +31,11 @@ Route::get('/terms', function () {
 Auth::routes();
 
 route::get('/home',[HomeController::class,'index'])->name('home');
+route::get("/home/{$keyword}",[HomeController::class,'search'])->name('home');
+
+
+
 // Route::get('/home', [A pp\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-
 // Route::view('register','register');
 // Route::view('login','login');
 // Route::post('registerUser','RestoController@registerUser');

@@ -28,10 +28,11 @@ class HomeController extends Controller
     {
        
     
-    // $cat ='helloo';   
-    $response = Http::get('https://www.dwa.ma/api/v1/search?word=dolo&type=principes,laboratoires,medicaments,pathologies')->json();
+    
+    $response = Http::get("https://www.dwa.ma/api/v1/search?word=doli&type=principes,laboratoires,medicaments,pathologies")->json();
    
     return view('home',[
+
 
         // "ppv"=>$response["data"]["all"]["hits"]["total"] ,
         "data"=>$response["data"]["all"]["hits"]["hits"],
@@ -48,6 +49,38 @@ class HomeController extends Controller
     
      
     }
+
+
+// 
+
+
+public function search($keyword) {
+
+
+    $response = Http::get("https://www.dwa.ma/api/v1/search?word={$keyword}&type=principes,laboratoires,medicaments,pathologies")->json();
+   
+    return view('home',[
+
+
+        // "ppv"=>$response["data"]["all"]["hits"]["total"] ,
+        "data"=>$response["data"]["all"]["hits"]["hits"],
+
+    ]);
+
+
+
+} 
+
+
+
+
+
+
+
+
+
+
+
 
 
    
