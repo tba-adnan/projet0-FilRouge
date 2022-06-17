@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Eir - Connexion</title>
+	<title>Eir - Tableau de bord</title>
 	<meta name="description" content="Bodrum - Modular Multi Purpose HTML5 template by tempload." />
 	<meta name="keywords" content="bodrum, startup, saas, agency, development, html, template, tempload" />
 	<meta name="author" content="tempload" />
@@ -24,6 +24,7 @@
 	<link href="{{URL::asset('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js'); }}" rel="stylesheet" type="text/css">
 	<link href="{{URL::asset('https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.jss'); }}" rel="stylesheet" type="text/css">
 	<link href="{{URL::asset('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'); }}" rel="stylesheet" type="text/css">
+	<link href="{{URL::asset('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'); }}" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<!-- ***** Preloader Start ***** -->
@@ -71,26 +72,45 @@
 @section('content')
 
 <div class="container">
-
             <div class="row height d-flex justify-content-center align-items-center">
-
               <div class="col-md-6">
-
 				<form action="/home" method="GET">
                 <div class="form">
-					
-                  <input type="text" name="search" class="form-control form-input" placeholder="Recherche des médicaments...">
-				  <button type=submit>search</button>
+                  <input type="text" name="search" class="form-control form-input" placeholder="Recherche des médicaments...🔍">
+				  <!-- <button type="button" class="btn btn-success">chercher</button> -->
                 </div>
 				</form>
+<!--  -->
+<br>
+@foreach ($data as $item)
+<!-- <div id="accordion"> -->
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn " data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+		{{$item["_source"]["name"] }}
+        </button>
+      </h5>
+    </div>
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+      Prix : {{$item["_source"]["ppv"] }} dh
+      </div>
+    </div>
+  </div>
+  @endforeach
+<!--  -->
+
+
+
                 <!-- {{-- <h1>{{$ppv}}</h1> --}} -->
-				<br>
-				<!-- @foreach ($data as $item) -->
+				<!-- <br>
+				@foreach ($data as $item)
 				<div class="alert alert-primary" role="alert">
 					Medicament
-					<!-- {{$item["_source"]["name"] }} -->
+					{{$item["_source"]["name"] }}
 				  </div>
-				<!-- @endforeach -->
+				@endforeach -->
 			
               </div>
               
@@ -99,3 +119,5 @@
           </div>
 		  
 @endsection
+
+

@@ -61,14 +61,15 @@ public function search(Request $keyword) {
 
 $keywords = $keyword->input("search");
 
-    // $response = Http::get("https://www.dwa.ma/api/v1/search?word={$keywords}&type=principes,laboratoires,medicaments,pathologies")->json();
-    $response = Http::get("https://www.dwa.ma/api/v1/search?word=doli&type=principes,laboratoires,medicaments,pathologies")->json();
+    $response = Http::get("https://www.dwa.ma/api/v1/search?word={$keywords}&type=principes,laboratoires,medicaments,pathologies")->json();
+    // $response = Http::get("https://www.dwa.ma/api/v1/search?word=doli&type=principes,laboratoires,medicaments,pathologies")->json();
 
     return view('home',[
 
 
         // "ppv"=>$response["data"]["all"]["hits"]["total"] ,
         "data"=>$response["data"]["all"]["hits"]["hits"],
+        // "tags"=>$response["data"]["all"]["hits"]["hits"],
         // "data"=>$response["data"]["metadata"]["meta"]["items"],
 
     ]);
