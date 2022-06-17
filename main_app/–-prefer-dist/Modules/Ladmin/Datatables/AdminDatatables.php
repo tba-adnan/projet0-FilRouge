@@ -12,7 +12,7 @@ class AdminDatatables extends Datatables
      *
      * @var String
      */
-    protected $title = 'List of admin accounts';
+    protected $title = 'Accounts Management';
 
     /**
      * Setup Query Builder

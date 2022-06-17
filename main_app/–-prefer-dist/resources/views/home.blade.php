@@ -85,7 +85,7 @@
 				</form>
                 <!-- {{-- <h1>{{$ppv}}</h1> --}} -->
 				<br>
-			
+				<!-- @foreach ($data as $item) -->
 				<div class="alert alert-primary" role="alert">
 					Medicament
 					<!-- {{$item["_source"]["name"] }} -->

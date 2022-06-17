@@ -1,5 +1,5 @@
 <x-ladmin-auth-layout>
-    <x-slot name="title">List of Admin accounts</x-slot>
+    <x-slot name="title">Account management</x-slot>
     @can(['ladmin.admin.create'])
         <x-slot name="button">
             <a href="{{ route('ladmin.admin.create', ladmin()->back()) }}" class="btn btn-primary">&plus; Add New</a>
