@@ -83,13 +83,14 @@
 				  <button type=submit>search</button>
                 </div>
 				</form>
-                {{-- <h1>{{$ppv}}</h1> --}}
+                <!-- {{-- <h1>{{$ppv}}</h1> --}} -->
 				<br>
-				@foreach ($data as $item)
+			
 				<div class="alert alert-primary" role="alert">
-					{{$item["_source"]["name"] }}
+					Medicament
+					<!-- {{$item["_source"]["name"] }} -->
 				  </div>
-				@endforeach
+				<!-- @endforeach -->
 			
               </div>
               
