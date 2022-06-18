@@ -76,7 +76,7 @@
               <div class="col-md-6">
 				<form action="/home" method="GET">
                 <div class="form">
-                  <input type="text" name="search" class="form-control form-input" placeholder="Recherche des médicaments...🔍">
+                  <input type="text" name="search" class="form-control form-input"  placeholder="Recherche des médicaments...🔍">
 				  <!-- <button type="button" class="btn btn-success">chercher</button> -->
                 </div>
 				</form>
@@ -94,7 +94,26 @@
     </div>
     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
       <div class="card-body">
+	  @if(isset($item["_source"]["ppv"] ))
       Prix : {{$item["_source"]["ppv"] }} dh
+	  @endif
+	  <br>
+	  @if(isset($item["_source"]["distributeuroufabriquant"] ))
+	  Par :  {{$item["_source"]["distributeuroufabriquant"] }}
+	  @endif
+	  <br>
+	  @if(isset($item["_source"]["tags"][0] ))
+	  {{$item["_source"]["tags"][0] }}
+	  @endif
+	  <br>
+	  @if(isset($item["_source"]["principes"][0] ))
+	  {{$item["_source"]["principes"][0] }}
+	  @endif
+	  <br>
+	  @if(isset($item["_source"]["principes"][0] ))
+	  {{$item["_source"]["principes"][0] }}
+	  @endif
+	  
       </div>
     </div>
   </div>
@@ -119,5 +138,4 @@
           </div>
 		  
 @endsection
-
 

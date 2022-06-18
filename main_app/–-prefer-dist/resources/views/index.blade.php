@@ -297,11 +297,9 @@
 
 	<!-- jQuery -->
 	<script src="eir-assets/js/jquery-2.1.0.min.js"></script>
-
 	<!-- Bootstrap -->
 	<script src="eir-assets/js/popper.js"></script>
 	<script src="eir-assets/js/bootstrap.min.js"></script>
-
 	<!-- Plugins -->
 	<script src="eir-assets/js/scrollreveal.min.js"></script>
 	<script src="eir-assets/js/imgfix.min.js"></script>
@@ -309,35 +307,9 @@
 	<script src="eir-assets/js/parallax.min.js"></script>
 	<script src="eir-assets/js/waypoints.min.js"></script>
 	<script src="eir-assets/js/jquery.counterup.min.js"></script>
-
 	<!-- Global Init -->
 	<script src="eir-assets/js/global.js"></script>
-
 	<!-- Green Sock - Gsap -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 </body>
 </html>
-
-<!-- <script src="../assests/js/bootstrap.js"></script>
-<script src="../assests/js/bootstrap-datetimepicker.min.js"></script>
-<script src="../assests/js/bootstrap-select.js"></script>
-<script src="../assests/js/bootstrap-select.min.js"></script>
-<script src="../assests/js/bootstrap.min.js"></script>
-<script src="../assests/js/costum.js"></script>
-<script src="../assests/js/global.js"></script>
-<script src="../assests/js/highlight.pack.js"></script>
-<script src="../assests/js/img.min.js"></script>
-<script src="../assests/js/jquery-2.1.0.min.js"></script>
-<script src="../assests/js/jquery.counterup.min.js"></script>
-<script src="../assests/js/map-script.js"></script>
-<script src="../assests/js/momment.js"></script>
-<script src="../assests/js/owl.carousel.min.js"></script>
-<script src="../assests/js/parallax.min.js"></script>
-<script src="../assests/js/particle-blue.js"></script>
-<script src="../assests/js/particle-dark.js"></script>
-<script src="../assests/js/particle-primary.js"></script>
-<script src="../assests/js/particles.min.js"></script>
-<script src="../assests/js/popper.js"></script>
-<script src="../assests/js/scrollreveal.min.js"></script>
-<script src="../assests/js/stickySidebar.js"></script>
-<script src="../assests/js/waypoints.min.js"></script> -->
