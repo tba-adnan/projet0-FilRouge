@@ -30,7 +30,7 @@
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #000000;
+    background: #3d4b64;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -71,7 +71,7 @@
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #999999;
+    color: #ffffff;
 }
 
 .sidebar-nav li a:hover {
@@ -126,4 +126,13 @@
         position: relative;
         margin-right: 0;
     }
+
+
+    .eir-logo {
+      
+        margin-top: 50px;
+    
+    }
 }
+
+

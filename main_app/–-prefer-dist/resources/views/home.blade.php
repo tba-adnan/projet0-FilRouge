@@ -73,47 +73,61 @@
     <br>
 
 <body>
-
-
-<!-- BST NAVBAR -->
-<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-  <a class="navbar-brand" href="/">Eir</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">compte</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<!-- BST NAVBAR -->
+    <!-- BST NAVBAR start. -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" style="">
+        <a class="navbar-brand">Eir</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <form method="POST">
+                        <a class="nav-link" href="/">Déconnexion<span class="sr-only">(current)</span></a>
+                </li>
+                </form>
+                <li class="nav-item">
+                    <!-- <a class="nav-link disabled" href="#">compte</a> -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- BST NAVBAR end. -->
 
     <div id="wrapper">
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
-			
+
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-				<hr>
-                    <!-- <a href="#">	
-					Carte 🗺️
-                    </a> -->
+                    <hr>
+                    <a href="#">
+                        Bonjour {{ Auth::user()->name }}!
+                    </a>
                 </li>
                 <li>
-                    <!-- <a href="#">Dashboard</a> -->
+                    <a
+                        href="https://www.google.com/search?q=+pharmacies&tbm=lcl&sxsrf=ALiCzsapKiVUgpJZkFYjhwNkpSvJ5OJGww%3A1655667397996&ei=xXqvYsi6PJSjlwSqubh4&oq=+pharmacies&gs_l=psy-ab.3..0i273k1j0i30i7k1l9.5074.5074.0.5265.1.1.0.0.0.0.187.187.0j1.1.0....0...1c.1.64.psy-ab..0.1.186....0.-GaCRqh9sdA#rlfi=hd:;si:;mv:[[35.782399,-5.7794872],[35.7522151,-5.8401784999999995]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3,lf:1">►
+                        Pharmacie proche 🗺️</a>
                 </li>
+                <li>
+                    <a href="#">► Votre compte 🏛️</a>
+                </li>
+                <li>
+                    <hr>
+                    <!-- <a href="#">information du roumboursment</a> -->
+                </li>
+                <!-- <div id="eir-logo">
+				<img src="http://eir.io/eir-assets/images/costum-images/Logo/Logo1v2.svg">
+			</div> -->
             </ul>
+
         </div>
         <!-- /#sidebar-wrapper -->
 
         <!-- Page Content -->
-		<br>
+        <br>
         <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div class="row">
@@ -137,11 +151,11 @@
                                             <input type="checkbox" class="custom-control-input" id="customCheck2">
                                             <label class="custom-control-label" for="customCheck2">chercher dans la base
                                                 donnés du Eir</label>
-                                        </div>
-										<br>
-										<br>
+                                          </div>
+                                            <hr>
+                                              <br>
                                     </form>
-
+<!-- Main app. -->
                                     @foreach ($data as $item)
                                     <div id="accordion">
                                         <div class="card">
@@ -160,7 +174,8 @@
                                                     @if(isset($item["_source"]["ppv"] ))
                                                     Prix : {{$item["_source"]["ppv"] }} dh
                                                     @else
-                                                    <p>is not exist or write something here</p>
+                                                    <p style="color:red;  font-style: italic">Type : Substence</p>
+													<p style="color:red;  font-style: italic">les informations sur le remboursement n'est pas disponible ❌</p>
                                                     @endif
                                                     <br>
                                                     @if(isset($item["_source"]["distributeuroufabriquant"] ))
@@ -168,13 +183,15 @@
                                                     @endif
                                                     <br>
                                                     @if(isset($item["_source"]["tags"][0] ))
-                                                    Du : {{$item["_source"]["tags"][0] }}
+                                                    Système ciblé : {{$item["_source"]["tags"][0] }}
                                                     @endif
                                                     <br>
                                                     @if(isset($item["_source"]["principes"][0] ))
                                                     Principe : {{$item["_source"]["principes"][0] }}
                                                     @endif
                                                     <br>
+													<br>
+													
                                                 </div>
                                             </div>
                                         </div>
@@ -187,15 +204,8 @@
                         <!-- /#page-content-wrapper -->
 
                     </div>
-
                     <!--  -->
-
                     @section('content')
-
-
-
-
-
                 </div>
             </div>
         </div>
