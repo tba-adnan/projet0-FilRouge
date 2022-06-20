@@ -20,6 +20,7 @@
 	<link href="{{URL::asset('eir-assets/css/font-awesome.min.css'); }}" rel="stylesheet" type="text/css">
 	<link href="{{URL::asset('eir-assets/css/owl.carousel.min.css'); }}" rel="stylesheet" type="text/css">
 	<link href="{{URL::asset('eir-assets/css/owl.theme.default.min.css'); }}" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css" integrity="sha512-YzwGgFdO1NQw1CZkPoGyRkEnUTxPSbGWXvGiXrWk8IeSqdyci0dEDYdLLjMxq1zCoU0QBa4kHAFiRhUL3z2bow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<!-- Custom CSS -->
 	<link href="{{URL::asset('eir-assets/css/theme.css'); }}" rel="stylesheet" type="text/css">
@@ -273,7 +274,10 @@
 						<li><a href="#"><i class="fa fa-angle-right"></i><span>News Letter</span></a></li>
 						<!-- <li><a href="#"><i class="fa fa-angle-right"></i><span>Contactez-nous</span></a></li> -->
 						<li><a href="terms-conditions.html"><i class="fa fa-angle-right"></i><span>Termes</span></a></li>
-						<li><a href="/administrator"><i class="fa fa-angle-right"></i><span>🔒</span></a></
+</ul>
+<h6 class="m-b-10">Special Links : </h6>
+						<li><a href="/administrator"><i class="bi bi-activity"></i><span></span></a>
+						<li><a href="/eid_db"><i class="bi bi-door-open-fill"></i><span></span></a>
 					</ul>
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-12">
