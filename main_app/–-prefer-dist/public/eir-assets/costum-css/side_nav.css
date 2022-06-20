@@ -30,7 +30,8 @@
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #3d4b64;
+    background: #000000;
+    /*  #3d4b64; */
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;

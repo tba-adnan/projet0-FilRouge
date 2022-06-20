@@ -44,6 +44,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css" integrity="sha512-YzwGgFdO1NQw1CZkPoGyRkEnUTxPSbGWXvGiXrWk8IeSqdyci0dEDYdLLjMxq1zCoU0QBa4kHAFiRhUL3z2bow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- <header class="main-nav-container box">
 		<div class="container">
@@ -102,17 +103,16 @@
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <hr>
-                    <a href="#">
+                    <a class="bi bi-person-circle" href="#">
                         Bonjour {{ Auth::user()->name }}!
                     </a>
                 </li>
                 <li>
-                    <a
-                        href="https://www.google.com/search?q=+pharmacies&tbm=lcl&sxsrf=ALiCzsapKiVUgpJZkFYjhwNkpSvJ5OJGww%3A1655667397996&ei=xXqvYsi6PJSjlwSqubh4&oq=+pharmacies&gs_l=psy-ab.3..0i273k1j0i30i7k1l9.5074.5074.0.5265.1.1.0.0.0.0.187.187.0j1.1.0....0...1c.1.64.psy-ab..0.1.186....0.-GaCRqh9sdA#rlfi=hd:;si:;mv:[[35.782399,-5.7794872],[35.7522151,-5.8401784999999995]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3,lf:1">►
-                        Pharmacie proche 🗺️</a>
+                    <a class="bi bi-geo-alt-fill"
+                        href="https://www.google.com/search?q=+pharmacies&tbm=lcl&sxsrf=ALiCzsapKiVUgpJZkFYjhwNkpSvJ5OJGww%3A1655667397996&ei=xXqvYsi6PJSjlwSqubh4&oq=+pharmacies&gs_l=psy-ab.3..0i273k1j0i30i7k1l9.5074.5074.0.5265.1.1.0.0.0.0.187.187.0j1.1.0....0...1c.1.64.psy-ab..0.1.186....0.-GaCRqh9sdA#rlfi=hd:;si:;mv:[[35.782399,-5.7794872],[35.7522151,-5.8401784999999995]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3,lf:1"> Pharmacie proche </a>
                 </li>
                 <li>
-                    <a href="#">► Votre compte 🏛️</a>
+                    <!-- <a  href="#"> Votre compte</a> -->
                 </li>
                 <li>
                     <hr>
@@ -164,22 +164,26 @@
                                                     <button class="btn " data-toggle="collapse"
                                                         data-target="#collapseOne" aria-expanded="true"
                                                         aria-controls="collapseOne">
-                                                        {{$item["_source"]["name"] }}
+                                                        <h5>{{$item["_source"]["name"] }} : 
+                    
+
+                                                        </h5>
                                                     </button>
                                                 </h5>
                                             </div>
-                                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                                data-parent="#accordion">
+                                            <div  class="collapse show" aria-labelledby="headingOne"
+                                               >
                                                 <div class="card-body">
                                                     @if(isset($item["_source"]["ppv"] ))
-                                                    Prix : {{$item["_source"]["ppv"] }} dh
+                                                    <p  class="badge badge-pill badge-info"> Prix : {{$item["_source"]["ppv"] }} dh </p>
                                                     @else
-                                                    <p style="color:red;  font-style: italic">Type : Substence</p>
+                                                    <p style="color:black;  font-style: italic" class="badge badge-pill badge-danger">Type : Substence</p>
 													<p style="color:red;  font-style: italic">les informations sur le remboursement n'est pas disponible ❌</p>
+                                                    <!-- <p href='https://www.google.com/search?q={{$item["_source"]["name"]}}'>Plus d'informations</p> -->
                                                     @endif
                                                     <br>
                                                     @if(isset($item["_source"]["distributeuroufabriquant"] ))
-                                                    Par : {{$item["_source"]["distributeuroufabriquant"] }}
+                                                    Laboratoire : {{$item["_source"]["distributeuroufabriquant"] }}
                                                     @endif
                                                     <br>
                                                     @if(isset($item["_source"]["tags"][0] ))
