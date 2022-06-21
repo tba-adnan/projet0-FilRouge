@@ -266,7 +266,7 @@
 					<div class="text">Eir online Health & Pharmacie est une solution simple pour vous aider à organiser, rechercher et suivre vos médicaments. </div>
 				</div>
 				<div class="col-lg-2 col-md-4 col-sm-6 col-6">
-					<h6 class="m-b-10">Helpful Links : </h6>
+					<h6 class="m-b-10">Liens utiles : </h6>
 					<ul class="footer-nav list-unstyled">
 						<li><a href="/login"><i class="fa fa-angle-right"></i><span>Connexion</span></a></li>
 						<li><a href="/register"><i class="fa fa-angle-right"></i><span>S'inscrire</span></a></li>
@@ -275,16 +275,16 @@
 						<!-- <li><a href="#"><i class="fa fa-angle-right"></i><span>Contactez-nous</span></a></li> -->
 						<li><a href="terms-conditions.html"><i class="fa fa-angle-right"></i><span>Termes</span></a></li>
 </ul>
-<h6 class="m-b-10">Special Links : </h6>
+<h6 class="m-b-10">Liens particuliers : </h6>
 						<li><a href="/administrator"><i class="bi bi-door-open-fill"></i><span></span></a>
 						<li><a href="/eir_db"><i class="bi bi-activity"></i><span></span></a>
 					</ul>
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-12">
-					<h6 class="m-b-10">Contact Us : </h6>
+					<h6 class="m-b-10">Contactez-nous : </h6>
 					<div class="address">
 						<p>42, Lot Hind - Casabarata, 9901<br>Tangier, Kingdom of Morocco.</p>
-						<p>Phone: (212)</p>
+						<p>Phone:(212)66775501</p>
 						<p><span>E-Mail: </span><a href="#">tebbaa.adnane.dev@gmail.com</a></p>
 					</div>
 				</div>

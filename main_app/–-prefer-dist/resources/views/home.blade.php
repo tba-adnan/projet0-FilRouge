@@ -95,9 +95,8 @@
         </div>
     </nav>
     <!-- BST NAVBAR end. -->
-
+<!-- 
     <div id="wrapper">
-        <!-- Sidebar -->
         <div id="sidebar-wrapper">
 
             <ul class="sidebar-nav">
@@ -112,18 +111,15 @@
                         href="https://www.google.com/search?q=+pharmacies&tbm=lcl&sxsrf=ALiCzsapKiVUgpJZkFYjhwNkpSvJ5OJGww%3A1655667397996&ei=xXqvYsi6PJSjlwSqubh4&oq=+pharmacies&gs_l=psy-ab.3..0i273k1j0i30i7k1l9.5074.5074.0.5265.1.1.0.0.0.0.187.187.0j1.1.0....0...1c.1.64.psy-ab..0.1.186....0.-GaCRqh9sdA#rlfi=hd:;si:;mv:[[35.782399,-5.7794872],[35.7522151,-5.8401784999999995]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3,lf:1"> Pharmacie proche </a>
                 </li>
                 <li>
-                    <!-- <a  href="#"> Votre compte</a> -->
+        
                 </li>
                 <li>
                     <hr>
-                    <!-- <a href="#">information du roumboursment</a> -->
+        
                 </li>
-                <!-- <div id="eir-logo">
-				<img src="http://eir.io/eir-assets/images/costum-images/Logo/Logo1v2.svg">
-			</div> -->
             </ul>
 
-        </div>
+        </div> -->
         <!-- /#sidebar-wrapper -->
 
         <!-- Page Content -->

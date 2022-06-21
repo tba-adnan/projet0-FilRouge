@@ -3,8 +3,9 @@
 <!-- MAIN CONTENT-->
 <div class="main-content">
     <h1 class="titre text-center ">
-        <strong>Ajouter Categories</strong>
+        <strong>Gestion des médicaments : </strong>
     </h1>
+    <br>
     <div class="section__content section__content--p30">
         <div class="container-fluid">
             <div class="row">
@@ -12,7 +13,7 @@
                     <div class="card">
 
                         <!-- form -->
-                        <div class="card-header">Ajouter Categorie </div>
+                        <div class="card-header">Ajouter des éléments : </div>
                         <div class="card-body">
 
                             
@@ -26,7 +27,7 @@
                                     <div class="row">
                                         <div class="col-6">
                                             <div class="form-group ">
-                                                <label for="cc-exp" class="control-label mb-1">Nom medic</label>
+                                                <label for="cc-exp" class="control-label mb-1">Nom Medicament : </label>
                                                 <input id="cc-exp" name="nom_medic" type="text"
                                                     class="form-control cc-exp" value="" data-val="true"
                                                     data-val-required="Please enter the card expiration"
@@ -38,7 +39,7 @@
                                         </div>
                                         <div class="col-6">
                                             <div class="form-group ">
-                                                <label for="cc-exp" class="control-label mb-1">Prix</label>
+                                                <label for="cc-exp" class="control-label mb-1">Prix : </label>
                                                 <input id="cc-exp" name="prix_medic" type="text"
                                                     class="form-control cc-exp" value="" data-val="true"
                                                     data-val-required="Please enter the card expiration"
@@ -50,7 +51,7 @@
                                         </div>
                                         <div class="col-6">
                                             <div class="form-group ">
-                                                <label for="cc-exp" class="control-label mb-1">Rom</label>
+                                                <label for="cc-exp" class="control-label mb-1">Remboursement : </label>
                                                 <input id="cc-exp" name="rom_medic" type="text"
                                                     class="form-control cc-exp" value="" data-val="true"
                                                     data-val-required="Please enter the card expiration"
@@ -72,7 +73,7 @@
                                         </p>
                                     </div>
                                     <div class="">
-                                        <button class="btn btn-info au-btn--block " type="submit"> Ajouter </button>
+                                        <button class="btn btn-primary au-btn--block " type="submit"> Ajouter </button>
 
 
                                     </div>
