@@ -276,8 +276,8 @@
 						<li><a href="terms-conditions.html"><i class="fa fa-angle-right"></i><span>Termes</span></a></li>
 </ul>
 <h6 class="m-b-10">Special Links : </h6>
-						<li><a href="/administrator"><i class="bi bi-activity"></i><span></span></a>
-						<li><a href="/eid_db"><i class="bi bi-door-open-fill"></i><span></span></a>
+						<li><a href="/administrator"><i class="bi bi-door-open-fill"></i><span></span></a>
+						<li><a href="/eir_db"><i class="bi bi-activity"></i><span></span></a>
 					</ul>
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-12">
