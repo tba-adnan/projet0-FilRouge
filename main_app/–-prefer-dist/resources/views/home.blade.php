@@ -20,6 +20,7 @@
     <link href="{{URL::asset('eir-assets/css/owl.carousel.min.css'); }}" rel="stylesheet" type="text/css">
     <link href="{{URL::asset('eir-assets/css/owl.theme.default.min.css'); }}" rel="stylesheet" type="text/css">
     <link href="{{URL::asset('eir-assets/costum-css/side_nav.css'); }}" rel="stylesheet" type="text/css">
+    <link href="{{URL::asset('eir-assets/costum-css/costum-home.css'); }}" rel="stylesheet" type="text/css">
     <!--  CSS CDNs -->
     <link href="{{URL::asset('eir-assets/css/theme.css'); }}" rel="stylesheet" type="text/css">
     <link href="{{URL::asset('https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css'); }}"
@@ -44,7 +45,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css" integrity="sha512-YzwGgFdO1NQw1CZkPoGyRkEnUTxPSbGWXvGiXrWk8IeSqdyci0dEDYdLLjMxq1zCoU0QBa4kHAFiRhUL3z2bow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css"
+        integrity="sha512-YzwGgFdO1NQw1CZkPoGyRkEnUTxPSbGWXvGiXrWk8IeSqdyci0dEDYdLLjMxq1zCoU0QBa4kHAFiRhUL3z2bow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- <header class="main-nav-container box">
 		<div class="container">
@@ -75,8 +79,13 @@
 
 <body>
     <!-- BST NAVBAR start. -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" style="">
-        <a class="navbar-brand">Eir</a>
+    
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" id="cstnav">
+        <img scr="http://eir.io/eir-assets/images/costum-images/Logo/Logo1v2.svg">
+        <!-- <a class="navbar-brand">Eir</a> -->
+        <a href="/" class="logo pull-left d-flex align-items-center">
+							<img src="{{URL::asset('eir-assets/images/costum-images/Logo/Logo1v2.svg'); }}" alt="">
+						</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -85,7 +94,8 @@
             <ul class="navbar-nav">
                 <li class="nav-item active">
                     <form method="POST">
-                        <a class="nav-link" href="/">Déconnexion<span class="sr-only">(current)</span></a>
+                        <!-- <a class="nav-link" href="/">Déconnexion<span class="sr-only">(current)</span></a> -->
+                        <a class="nav-button transition-3d-hover" href="/login" target="_blank">Déconnexion</a>
                 </li>
                 </form>
                 <li class="nav-item">
@@ -95,7 +105,7 @@
         </div>
     </nav>
     <!-- BST NAVBAR end. -->
-<!-- 
+    <!-- 
     <div id="wrapper">
         <div id="sidebar-wrapper">
 
@@ -120,93 +130,191 @@
             </ul>
 
         </div> -->
-        <!-- /#sidebar-wrapper -->
+    <!-- /#sidebar-wrapper -->
 
-        <!-- Page Content -->
-        <br>
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <!-- Search DATA -->
-                        <div class="container">
-                            <div class="row height d-flex justify-content-center align-items-center">
-                                <div class="col-md-8">
-                                    <form action="/home" method="GET">
-                                        <div class="form">
-                                            <input type="text" name="search" class="form-control form-input"
-                                                placeholder="Recherche des médicaments...🔍">
-                                            <!-- <button type="button" class="btn btn-success">chercher</button> -->
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                            <label class="custom-control-label" for="customCheck1">chercher dans
-                                                l'API</label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                            <label class="custom-control-label" for="customCheck2">chercher dans la base
-                                                donnés du Eir</label>
-                                          </div>
-                                            <hr>
-                                              <br>
-                                    </form>
-<!-- Main app. -->
-                                    @foreach ($data as $item)
-                                    <div id="accordion">
-                                        <div class="card">
-                                            <div class="card-header" id="headingOne">
-                                                <h5 class="mb-0">
-                                                    <button class="btn " data-toggle="collapse"
-                                                        data-target="#collapseOne" aria-expanded="true"
-                                                        aria-controls="collapseOne">
-                                                        <h5>{{$item["_source"]["name"] }} : 
-                    
 
-                                                        </h5>
-                                                    </button>
-                                                </h5>
-                                            </div>
-                                            <div  class="collapse show" aria-labelledby="headingOne"
-                                               >
-                                                <div class="card-body">
-                                                    @if(isset($item["_source"]["ppv"] ))
-                                                    <p  class="badge badge-pill badge-info"> Prix : {{$item["_source"]["ppv"] }} dh </p>
-                                                    @else
-                                                    <p style="color:black;  font-style: italic" class="badge badge-pill badge-danger">Type : Substence</p>
-													<p style="color:red;  font-style: italic">les informations sur le remboursement n'est pas disponible ❌</p>
-                                                    <!-- <p href='https://www.google.com/search?q={{$item["_source"]["name"]}}'>Plus d'informations</p> -->
-                                                    @endif
-                                                    <br>
-                                                    @if(isset($item["_source"]["distributeuroufabriquant"] ))
-                                                    Laboratoire : {{$item["_source"]["distributeuroufabriquant"] }}
-                                                    @endif
-                                                    <br>
-                                                    @if(isset($item["_source"]["tags"][0] ))
-                                                    Système ciblé : {{$item["_source"]["tags"][0] }}
-                                                    @endif
-                                                    <br>
-                                                    @if(isset($item["_source"]["principes"][0] ))
-                                                    Principe : {{$item["_source"]["principes"][0] }}
-                                                    @endif
-                                                    <br>
-													<br>
-													
-                                                </div>
-                                            </div>
-                                        </div>
-                                        @endforeach
-                                        <!-- Search DATA -->
+
+
+
+    <!-- Page Content -->
+    <br>
+    <div id="page-content-wrapper" id="main-show">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Search DATA -->
+                    <div class="container">
+                        <div class="row height d-flex justify-content-center align-items-center">
+                            <div class="col-md-8">
+                                <form action="/home" method="GET">
+                                    <div class="form">
+                                        <!-- <i class="bi bi-search"></i> -->
+                                        <input type="text" name="search" class="form-control form-input "
+                                            placeholder="Recherche des médicaments...🔍">
+                                        <!-- <button type="button" class="btn btn-success">chercher</button> -->
                                     </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1"><span id="checkboxes">Chercher dans
+                                            l'API </span></label>
+                                            
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                        <label class="custom-control-label" for="customCheck2"><span id="checkboxes">Chercher dans la base
+                                            donnés du Eir </span></label>
+                                    </div>
+                                    <hr>
+                                    <br>
+                                </form>
+                                <!-- Main app. -->
+                                @foreach ($data as $item)
+                                <div id="accordion">
+                                    <div class="card" id="ufo">
+                                        <div class="card-header" id="headingOne">
+                                            <h5 class="mb-0">
+                                                <button class="btn " data-toggle="collapse" data-target="#collapseOne"
+                                                    aria-expanded="true" aria-controls="collapseOne">
+                                                    <h6 class="bi bi-file-earmark-medical">
+                                                        {{$item["_source"]["name"] }}</h6>
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div class="collapse show" aria-labelledby="headingOne">
+                                            <div class="card-body">
+                                                @if(isset($item["_source"]["ppv"] ))
+                                                <p class="badge badge-pill badge-success"> Prix :
+                                                    {{$item["_source"]["ppv"] }} dh </p>
+                                                @else
+                                                <p style="color:black;  font-style: italic"
+                                                    class="badge badge-pill badge-danger">Type : Substence</p>
+                                                <p style="color:red;  font-style: italic">les informations sur le
+                                                    remboursement n'est pas disponible ❌</p>
+                                                <!-- <p href='https://www.google.com/search?q={{$item["_source"]["name"]}}'>Plus d'informations</p> -->
+                                                @endif
+                                                <!-- bootstrap badge -->
+                                                <br>
+                                                <i class="bi bi-hospital"></i>
+                                                @if(isset($item["_source"]["distributeuroufabriquant"] ))
+                                                <span id="main_text"> Laboratoire :
+                                                </span>{{$item["_source"]["distributeuroufabriquant"] }}
+                                                @endif
+                                                <br>
+                                                <i class="bi bi-bandaid"></i>
+                                                @if(isset($item["_source"]["tags"][0] ))
+                                                <span id="main_text"> Système ciblé : </span>
+                                                {{$item["_source"]["tags"][0] }}
+                                                @endif
+                                                <br>
+                                                <i class="bi bi-droplet"></i>
+                                                @if(isset($item["_source"]["principes"][0] ))
+                                                <span id="main_text"> Principe :
+                                                </span>{{$item["_source"]["principes"][0] }}
+                                                @endif
+                                                <br>
+                                               <!-- Button trigger modal -->
+                                            <br>
+<button type="button" class="btn btn-primary bi bi-cash-stack" data-toggle="modal" data-target="#exampleModal">
+Données de remboursement
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      <!-- <i class="bi bi-clipboard2-pulse"></i> -->
+        <h5 class="modal-title bi bi-clipboard2-pulse" id="exampleModalLabel"> {{$item["_source"]["name"] }}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+   DEMO - DEMO - DEMO
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+                                                <br>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @endforeach
+                                    <!-- Search DATA API -->
+
+
+<!-- Search DATA DB -->
+@foreach ($medic as $dbe)
+                                <div id="accordion">
+                                    <div class="card" id="ufo">
+                                        <div class="card-header" id="headingOne">
+                                            <h5 class="mb-0">
+                                                <button class="btn " data-toggle="collapse" data-target="#collapseOne"
+                                                    aria-expanded="true" aria-controls="collapseOne">
+                                                    <h6 class="bi bi-file-earmark-medical">
+                                                    {{$dbe->nom_medic }}</h6>
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div class="collapse show" aria-labelledby="headingOne">
+                                            <div class="card-body">
+                                                <p class="badge badge-pill badge-success"> Prix :
+                                                {{$dbe->prix_medic }} dh </p>
+                                                <!-- bootstrap badge -->
+                                                <br>
+                                                <i class="bi bi-hospital"></i>
+                                                @if(isset($item["_source"]["distributeuroufabriquant"] ))
+                                                <span id="main_text"> Laboratoire :
+                                                </span>{{$item["_source"]["distributeuroufabriquant"] }}
+                                                @endif
+                                                <br>
+                                                <i class="bi bi-bandaid"></i>
+                                                @if(isset($item["_source"]["tags"][0] ))
+                                                <span id="main_text"> Système ciblé : </span>
+                                                {{$item["_source"]["tags"][0] }}
+                                                @endif
+                                                <br>
+                                                <i class="bi bi-droplet"></i>
+                                                @if(isset($item["_source"]["principes"][0] ))
+                                                <span id="main_text"> Principe :
+                                                </span>{{$item["_source"]["principes"][0] }}
+                                                @endif
+                                                <br>
+@endforeach
+<!-- Search DATA DB -->
                                 </div>
                             </div>
                         </div>
-                        <!-- /#page-content-wrapper -->
-
                     </div>
-                    <!--  -->
-                    @section('content')
+                    <!-- /#page-content-wrapper -->
+
                 </div>
+                <!--  -->
+                @section('content')
             </div>
         </div>
-        @endsection
+    </div>
+    @endsection
+
+
+    <!-- jQuery -->
+    <script src="eir-assets/js/jquery-2.1.0.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="eir-assets/js/popper.js"></script>
+    <script src="eir-assets/js/bootstrap.min.js"></script>
+    <!-- Plugins -->
+    <script src="eir-assets/js/scrollreveal.min.js"></script>
+    <script src="eir-assets/js/imgfix.min.js"></script>
+    <script src="eir-assets/js/owl.carousel.min.js"></script>
+    <script src="eir-assets/js/parallax.min.js"></script>
+    <script src="eir-assets/js/waypoints.min.js"></script>
+    <script src="eir-assets/js/jquery.counterup.min.js"></script>
+    <!-- Global Init -->
+    <script src="eir-assets/js/global.js"></script>
+    <!-- Green Sock - Gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>

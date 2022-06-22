@@ -1,0 +1,32 @@
+#cstnav {
+    box-shadow: 0 0 5px rgb(0 0 0 / 20%) !important; 
+}
+
+
+/* body {
+background-color: #eeeff3 !important;
+} */
+
+
+#ufo {
+box-shadow:  0 5px 10px rgb(0 0 0 / 20%) !important;
+}
+
+
+#labs {
+    color: black!important;
+    }
+
+#main_text {
+    color: black !important;
+    font-weight: 700;
+    /* size: 100px !important;  */
+    } 
+
+
+#checkboxes {
+        color: black !important;
+        font-weight: 500;
+        font-style: italic;
+        /* size: 100px !important;  */
+        } 

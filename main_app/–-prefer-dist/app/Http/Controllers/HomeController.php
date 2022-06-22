@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use GuzzleHttp\Client;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -55,27 +56,37 @@ class HomeController extends Controller
 
 
 public function search(Request $keyword) {
-// if($keyword){
-//     'hello  ';
-// }
-
 $keywords = $keyword->input("search");
+$medic = DB::table('medic_data')
+->select("*")
+->get();
+
+
+
 
     $response = Http::get("https://www.dwa.ma/api/v1/search?word={$keywords}&type=principes,laboratoires,medicaments,pathologies")->json();
     // $response = Http::get("https://www.dwa.ma/api/v1/search?word=doli&type=principes,laboratoires,medicaments,pathologies")->json();
 
     return view('home',[
         // "ppv"=>$response["data"]["all"]["hits"]["total"] ,
-        "data"=>$response["data"]["all"]["hits"]["hits"],
         // "tags"=>$response["data"]["all"]["hits"]["hits"],
         // "data"=>$response["data"]["metadata"]["meta"]["items"],
+        "data"=>$response["data"]["all"]["hits"]["hits"],
+        "medic"=>$medic
 
     ]);
 
 
 
+
+
+
 } 
 
+
+//   @foreach ($medic as $dbe)
+// {{$dbe->nom_medic }}
+// @endforeach
 
 
 
