@@ -57,8 +57,10 @@ class HomeController extends Controller
 
 public function search(Request $keyword) {
 $keywords = $keyword->input("search");
+
 $medic = DB::table('medic_data')
 ->select("*")
+->where("nom_medic", $keywords)
 ->get();
 
 

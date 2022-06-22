@@ -14,7 +14,7 @@
 </body>
 </html>
 <div class="container-fluid px-4">
-    <h1 class="mt-4">Données actuelles : </h1>
+    <h1 class="mt-4 bi bi-server"> Données actuelles : </h1>
     <ol class="breadcrumb mb-4">
         <li class="breadcrumb-item"><a href="{{route('afficher-categorie.create')}}">Ajouter categorie</a></li>
         <li class="breadcrumb-item active">Tables</li>
@@ -22,8 +22,8 @@
     
     <div class="card mb-4">
         <div class="card-header">
-            <i class="fas fa-table me-1"></i>
-            DataTable Example
+            <i class="fas bi bi-bar-chart-fill"></i>
+           <!--  -->
         </div>
         <div class="card-body col-lg-10">
             <table id="datatablesSimple">
@@ -48,14 +48,15 @@
                         <td style="width: 6%">
                                 {{-- <a href=""><i class="item-action fa fa-eye" data-toggle="modal"
                                         data-target="#labelModal"></i></a> --}}
-                                <a href="{{route('afficher-categorie.edit',$value->id_medic)}}"><i class="item-action bi bi-pen-fill" data-toggle="modal"
-                                        data-target="#labelModal"></i></a>
+                                        <br>
+                                <a href="{{route('afficher-categorie.edit',$value->id_medic)}}"><i class="item-action btn btn-warning" data-toggle="modal"
+                                        data-target="#labelModal">Modifier</i></a>
                                
                                <form action="{{route('afficher-categorie.destroy',$value->id_medic)}}" method="POST">
                                       @csrf
                                 @method("DELETE")
-                                <button> <i class="item-action bi bi-trash-fill" data-toggle="modal"
-                                        data-target="#deleteItemModal"></i></button>
+                                <i class="item-action btn btn-danger " data-toggle="modal"
+                                        data-target="#deleteItemModal">Supprimer</i>
                             
                                     </form>
                             

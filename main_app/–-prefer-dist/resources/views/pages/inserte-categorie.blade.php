@@ -2,9 +2,9 @@
 @section('content')
 <!-- MAIN CONTENT-->
 <div class="main-content">
-    <h1 class="titre text-center ">
+    <!-- <h1 class="titre text-center ">
         <strong>Gestion des médicaments : </strong>
-    </h1>
+    </h1> -->
     <br>
     <div class="section__content section__content--p30">
         <div class="container-fluid">
@@ -13,7 +13,7 @@
                     <div class="card">
 
                         <!-- form -->
-                        <div class="card-header">Ajouter des éléments : </div>
+                        <div class="card-header bi bi-plus-circle-fill"> Ajouter des éléments : </div>
                         <div class="card-body">
 
                             
@@ -73,7 +73,7 @@
                                         </p>
                                     </div>
                                     <div class="">
-                                        <button class="btn btn-primary au-btn--block " type="submit"> Ajouter </button>
+                                        <button class="btn btn-primary au-btn--block bi bi-plus-circle-fill " type="submit">  Ajouter </button>
 
 
                                     </div>

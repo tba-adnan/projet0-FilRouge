@@ -8,10 +8,12 @@
 
 
     <!-- MAIN CONTENT-->
+    <br>
     <div class="main-content">
-        <h1 class="titre text-center ">
+        <!-- <h1 class="titre text-center bi bi-pen-fill ">
+            <br>
             <strong>MODIFIER LE CATEGORIE</strong>
-        </h1>
+        </h1> -->
         <div class="section__content section__content--p30">
             <div class="container-fluid">
                 <div class="row">

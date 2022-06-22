@@ -153,6 +153,7 @@
                                             placeholder="Recherche des médicaments...🔍">
                                         <!-- <button type="button" class="btn btn-success">chercher</button> -->
                                     </div>
+                                    <br>
                                     <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="customCheck1">
                                         <label class="custom-control-label" for="customCheck1"><span id="checkboxes">Chercher dans
@@ -161,14 +162,17 @@
                                     </div>
                                     <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                        <label class="custom-control-label" for="customCheck2"><span id="checkboxes">Chercher dans la base
+                                        <label class="custom-control-label " for="customCheck2"><span id="checkboxes">Chercher dans la base
                                             donnés du Eir </span></label>
+                              
                                     </div>
+                                    
                                     <hr>
                                     <br>
                                 </form>
                                 <!-- Main app. -->
                                 @foreach ($data as $item)
+                                <br>
                                 <div id="accordion">
                                     <div class="card" id="ufo">
                                         <div class="card-header" id="headingOne">
@@ -212,6 +216,8 @@
                                                 </span>{{$item["_source"]["principes"][0] }}
                                                 @endif
                                                 <br>
+                                                <span class="bi bi-tags-fill"> Données d'API</span>
+                                                <br>
                                                <!-- Button trigger modal -->
                                             <br>
 <button type="button" class="btn btn-primary bi bi-cash-stack" data-toggle="modal" data-target="#exampleModal">
@@ -250,6 +256,7 @@ Données de remboursement
 
 <!-- Search DATA DB -->
 @foreach ($medic as $dbe)
+<br>
                                 <div id="accordion">
                                     <div class="card" id="ufo">
                                         <div class="card-header" id="headingOne">
@@ -268,22 +275,21 @@ Données de remboursement
                                                 <!-- bootstrap badge -->
                                                 <br>
                                                 <i class="bi bi-hospital"></i>
-                                                @if(isset($item["_source"]["distributeuroufabriquant"] ))
                                                 <span id="main_text"> Laboratoire :
-                                                </span>{{$item["_source"]["distributeuroufabriquant"] }}
-                                                @endif
+                                                </span style="italic">Pas d'informations!
                                                 <br>
                                                 <i class="bi bi-bandaid"></i>
-                                                @if(isset($item["_source"]["tags"][0] ))
-                                                <span id="main_text"> Système ciblé : </span>
-                                                {{$item["_source"]["tags"][0] }}
-                                                @endif
+                                                <span id="main_text"> Système ciblé : Pas d'informations!</span>
                                                 <br>
                                                 <i class="bi bi-droplet"></i>
-                                                @if(isset($item["_source"]["principes"][0] ))
-                                                <span id="main_text"> Principe :
-                                                </span>{{$item["_source"]["principes"][0] }}
-                                                @endif
+                                                <span id="main_text"> Principe : Pas d'informations!
+                                                </span>
+                                                <br>
+                                                <i class="bi bi-cash-stack"></i>
+                                                <span id="main_text"> Remboursement : {{$dbe->rom_medic }} dh.
+                                                </span>
+                                                <br>
+                                                <span class="bi bi-tags-fill"> Données de la base de données</span>
                                                 <br>
 @endforeach
 <!-- Search DATA DB -->
