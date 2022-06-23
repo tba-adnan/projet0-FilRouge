@@ -309,7 +309,7 @@
                                                     </span>
                                                     <br>
                                                     <i class="bi bi-cash-stack"></i>
-                                                    <span id="main_text"> Remboursement : {{$dbe->rom_medic }} dh.
+                                                    <span id="price_db"> Remboursement : {{$dbe->rom_medic }} dh.
                                                     </span>
                                                     <br>
                                                     <span class="bi bi-tags-fill"> Données de la base de données</span>
