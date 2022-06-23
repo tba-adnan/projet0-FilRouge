@@ -242,7 +242,7 @@
                                                                 <!-- <i class="bi bi-clipboard2-pulse"></i> -->
                                                                 <h5 class="modal-title bi bi-clipboard2-pulse"
                                                                     id="exampleModalLabel">
-                                                                    {{$item["_source"]["name"] }}</h5>
+                                                                    {{$item["_source"]["name"] }}.</h5>
                                                                 <button type="button" class="close" data-dismiss="modal"
                                                                     aria-label="Close">
                                                                     <span aria-hidden="true">&times;</span>
@@ -252,7 +252,7 @@
                                                                 <i class="bi bi-bandaid"></i>
                                                                 @if(isset($item["_source"]["tags"][0] ))
                                                                 <span id="main_text"> Système ciblé : </span>
-                                                                {{$item["_source"]["tags"][0] }}
+                                                                {{$item["_source"]["tags"][0] }}.
                                                                 @endif
                                                                 <br>
                                                                 <i class="bi bi-cash-stack"></i>
