@@ -274,6 +274,7 @@
 						<li><a href="#"><i class="fa fa-angle-right"></i><span>News Letter</span></a></li>
 						<!-- <li><a href="#"><i class="fa fa-angle-right"></i><span>Contactez-nous</span></a></li> -->
 						<li><a href="terms-conditions.html"><i class="fa fa-angle-right"></i><span>Termes</span></a></li>
+						<li><a href="terms-conditions.html"><i class="fa fa-angle-right"></i><span>page 404</span></a></li>
 </ul>
 <h6 class="m-b-10">Liens particuliers : </h6>
 						<li><a href="/administrator"><i class="bi bi-door-open-fill"></i><span></span></a>
