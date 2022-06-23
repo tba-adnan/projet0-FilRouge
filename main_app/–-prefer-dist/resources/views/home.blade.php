@@ -1,5 +1,4 @@
 <!-- @extends('layouts.app') -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -79,13 +78,13 @@
 
 <body>
     <!-- BST NAVBAR start. -->
-    
+
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" id="cstnav">
         <img scr="http://eir.io/eir-assets/images/costum-images/Logo/Logo1v2.svg">
         <!-- <a class="navbar-brand">Eir</a> -->
         <a href="/" class="logo pull-left d-flex align-items-center">
-							<img src="{{URL::asset('eir-assets/images/costum-images/Logo/Logo1v2.svg'); }}" alt="">
-						</a>
+            <img src="{{URL::asset('eir-assets/images/costum-images/Logo/Logo1v2.svg'); }}" alt="">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -156,17 +155,19 @@
                                     <br>
                                     <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                        <label class="custom-control-label" for="customCheck1"><span id="checkboxes">Chercher dans
-                                            l'API </span></label>
-                                            
+                                        <label class="custom-control-label" for="customCheck1"><span
+                                                id="checkboxes">Chercher dans
+                                                l'API </span></label>
+
                                     </div>
                                     <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                        <label class="custom-control-label " for="customCheck2"><span id="checkboxes">Chercher dans la base
-                                            donnés du Eir </span></label>
-                              
+                                        <label class="custom-control-label " for="customCheck2"><span
+                                                id="checkboxes">Chercher dans la base
+                                                donnés du Eir </span></label>
+
                                     </div>
-                                    
+
                                     <hr>
                                     <br>
                                 </form>
@@ -218,33 +219,54 @@
                                                 <br>
                                                 <span class="bi bi-tags-fill"> Données d'API</span>
                                                 <br>
-                                               <!-- Button trigger modal -->
-                                            <br>
-<button type="button" class="btn btn-primary bi bi-cash-stack" data-toggle="modal" data-target="#exampleModal">
-Données de remboursement
-</button>
+                                                <!-- Button trigger modal -->
+                                                <br>
+                                                <button type="button" class="btn btn-primary bi bi-cash-stack"
+                                                    data-toggle="modal" data-target="#exampleModal">
+                                                    Données de remboursement
+                                                </button>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-      <!-- <i class="bi bi-clipboard2-pulse"></i> -->
-        <h5 class="modal-title bi bi-clipboard2-pulse" id="exampleModalLabel"> {{$item["_source"]["name"] }}</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-   DEMO - DEMO - DEMO
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <!-- <i class="bi bi-clipboard2-pulse"></i> -->
+                                                                <h5 class="modal-title bi bi-clipboard2-pulse"
+                                                                    id="exampleModalLabel">
+                                                                    {{$item["_source"]["name"] }}</h5>
+                                                                <button type="button" class="close" data-dismiss="modal"
+                                                                    aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <i class="bi bi-bandaid"></i>
+                                                                @if(isset($item["_source"]["tags"][0] ))
+                                                                <span id="main_text"> Système ciblé : </span>
+                                                                {{$item["_source"]["tags"][0] }}
+                                                                @endif
+                                                                <br>
+                                                                <i class="bi bi-cash-stack"></i>
+                                                                <span id="main_text"> Remboursement : </span>
+                                                                @if(isset($item["_source"]["ppv"] ))
+                                                                {{$item["_source"]["ppv"] * 70 / 100 }}
+                                                                @else
+                                                                <span>xxx</span>
+                                                                @endif
+                                                              
+                                                                <!--  -->
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary"
+                                                                    data-dismiss="modal">Fermer</button>
+                                                                <!-- <button type="button" class="btn btn-primary">Save
+                                                                    changes</button> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <br>
 
                                             </div>
@@ -254,73 +276,74 @@ Données de remboursement
                                     <!-- Search DATA API -->
 
 
-<!-- Search DATA DB -->
-@foreach ($medic as $dbe)
-<br>
-                                <div id="accordion">
-                                    <div class="card" id="ufo">
-                                        <div class="card-header" id="headingOne">
-                                            <h5 class="mb-0">
-                                                <button class="btn " data-toggle="collapse" data-target="#collapseOne"
-                                                    aria-expanded="true" aria-controls="collapseOne">
-                                                    <h6 class="bi bi-file-earmark-medical">
-                                                    {{$dbe->nom_medic }}</h6>
-                                                </button>
-                                            </h5>
+                                    <!-- Search DATA DB -->
+                                    @foreach ($medic as $dbe)
+                                    <br>
+                                    <div id="accordion">
+                                        <div class="card" id="ufo">
+                                            <div class="card-header" id="headingOne">
+                                                <h5 class="mb-0">
+                                                    <button class="btn " data-toggle="collapse"
+                                                        data-target="#collapseOne" aria-expanded="true"
+                                                        aria-controls="collapseOne">
+                                                        <h6 class="bi bi-file-earmark-medical">
+                                                            {{$dbe->nom_medic }}</h6>
+                                                    </button>
+                                                </h5>
+                                            </div>
+                                            <div class="collapse show" aria-labelledby="headingOne">
+                                                <div class="card-body">
+                                                    <p class="badge badge-pill badge-success"> Prix :
+                                                        {{$dbe->prix_medic }} dh </p>
+                                                    <!-- bootstrap badge -->
+                                                    <br>
+                                                    <i class="bi bi-hospital"></i>
+                                                    <span id="main_text"> Laboratoire :
+                                                    </span style="italic">Pas d'informations!
+                                                    <br>
+                                                    <i class="bi bi-bandaid"></i>
+                                                    <span id="main_text"> Système ciblé : Pas d'informations!</span>
+                                                    <br>
+                                                    <i class="bi bi-droplet"></i>
+                                                    <span id="main_text"> Principe : Pas d'informations!
+                                                    </span>
+                                                    <br>
+                                                    <i class="bi bi-cash-stack"></i>
+                                                    <span id="main_text"> Remboursement : {{$dbe->rom_medic }} dh.
+                                                    </span>
+                                                    <br>
+                                                    <span class="bi bi-tags-fill"> Données de la base de données</span>
+                                                    <br>
+                                                    @endforeach
+                                                    <!-- Search DATA DB -->
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="collapse show" aria-labelledby="headingOne">
-                                            <div class="card-body">
-                                                <p class="badge badge-pill badge-success"> Prix :
-                                                {{$dbe->prix_medic }} dh </p>
-                                                <!-- bootstrap badge -->
-                                                <br>
-                                                <i class="bi bi-hospital"></i>
-                                                <span id="main_text"> Laboratoire :
-                                                </span style="italic">Pas d'informations!
-                                                <br>
-                                                <i class="bi bi-bandaid"></i>
-                                                <span id="main_text"> Système ciblé : Pas d'informations!</span>
-                                                <br>
-                                                <i class="bi bi-droplet"></i>
-                                                <span id="main_text"> Principe : Pas d'informations!
-                                                </span>
-                                                <br>
-                                                <i class="bi bi-cash-stack"></i>
-                                                <span id="main_text"> Remboursement : {{$dbe->rom_medic }} dh.
-                                                </span>
-                                                <br>
-                                                <span class="bi bi-tags-fill"> Données de la base de données</span>
-                                                <br>
-@endforeach
-<!-- Search DATA DB -->
+                                    </div>
+                                    <!-- /#page-content-wrapper -->
+
                                 </div>
+                                <!--  -->
+                                @section('content')
                             </div>
                         </div>
                     </div>
-                    <!-- /#page-content-wrapper -->
-
-                </div>
-                <!--  -->
-                @section('content')
-            </div>
-        </div>
-    </div>
-    @endsection
+                    @endsection
 
 
-    <!-- jQuery -->
-    <script src="eir-assets/js/jquery-2.1.0.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="eir-assets/js/popper.js"></script>
-    <script src="eir-assets/js/bootstrap.min.js"></script>
-    <!-- Plugins -->
-    <script src="eir-assets/js/scrollreveal.min.js"></script>
-    <script src="eir-assets/js/imgfix.min.js"></script>
-    <script src="eir-assets/js/owl.carousel.min.js"></script>
-    <script src="eir-assets/js/parallax.min.js"></script>
-    <script src="eir-assets/js/waypoints.min.js"></script>
-    <script src="eir-assets/js/jquery.counterup.min.js"></script>
-    <!-- Global Init -->
-    <script src="eir-assets/js/global.js"></script>
-    <!-- Green Sock - Gsap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+                    <!-- jQuery -->
+                    <script src="eir-assets/js/jquery-2.1.0.min.js"></script>
+                    <!-- Bootstrap -->
+                    <script src="eir-assets/js/popper.js"></script>
+                    <script src="eir-assets/js/bootstrap.min.js"></script>
+                    <!-- Plugins -->
+                    <script src="eir-assets/js/scrollreveal.min.js"></script>
+                    <script src="eir-assets/js/imgfix.min.js"></script>
+                    <script src="eir-assets/js/owl.carousel.min.js"></script>
+                    <script src="eir-assets/js/parallax.min.js"></script>
+                    <script src="eir-assets/js/waypoints.min.js"></script>
+                    <script src="eir-assets/js/jquery.counterup.min.js"></script>
+                    <!-- Global Init -->
+                    <script src="eir-assets/js/global.js"></script>
+                    <!-- Green Sock - Gsap -->
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
