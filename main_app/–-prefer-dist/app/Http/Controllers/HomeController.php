@@ -63,7 +63,7 @@ $medic = DB::table('medic_data')
 ->where("nom_medic", $keywords)
 ->get();
 
-
+$limit = "100"; 
 
 
     $response = Http::get("https://www.dwa.ma/api/v1/search?word={$keywords}&type=principes,laboratoires,medicaments,pathologies")->json();
@@ -74,7 +74,9 @@ $medic = DB::table('medic_data')
         // "tags"=>$response["data"]["all"]["hits"]["hits"],
         // "data"=>$response["data"]["metadata"]["meta"]["items"],
         "data"=>$response["data"]["all"]["hits"]["hits"],
-        "medic"=>$medic
+        "medic"=>$medic, 
+        "limit"=>$limit
+         
 
     ]);
 

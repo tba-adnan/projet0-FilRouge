@@ -221,11 +221,18 @@
                                                 <br>
                                                 <!-- Button trigger modal -->
                                                 <br>
+                                                @if(isset($item["_source"]["ppv"] ))
+                                                 @if($item["_source"]["ppv"] > 100) 
                                                 <button type="button" class="btn btn-primary bi bi-cash-stack"
                                                     data-toggle="modal" data-target="#exampleModal">
                                                     Données de remboursement
                                                 </button>
-
+                                                 @else
+                                                <div class="alert alert-danger" role="alert">
+                                                Ce médicament n'est pas remboursable.
+                                                </div>
+                                                 @endif
+                                                @endif
                                                 <!-- Modal -->
                                                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
                                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -249,13 +256,14 @@
                                                                 @endif
                                                                 <br>
                                                                 <i class="bi bi-cash-stack"></i>
-                                                                <span id="main_text"> Remboursement : </span>
-                                                                @if(isset($item["_source"]["ppv"] ))
-                                                                {{$item["_source"]["ppv"] * 70 / 100 }}
+                                                                <span id="price_db"> Remboursement :
+                                                                    @if(isset($item["_source"]["ppv"] ))
+                                                                    {{$item["_source"]["ppv"] * 70 / 100 }} dh
+                                                                    TTC.</span>
                                                                 @else
-                                                                <span>xxx</span>
+
                                                                 @endif
-                                                              
+
                                                                 <!--  -->
                                                             </div>
                                                             <div class="modal-footer">
