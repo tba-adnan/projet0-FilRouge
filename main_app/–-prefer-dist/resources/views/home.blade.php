@@ -94,7 +94,7 @@
                 <li class="nav-item active">
                     <form method="POST">
                         <!-- <a class="nav-link" href="/">Déconnexion<span class="sr-only">(current)</span></a> -->
-                        <a class="nav-button transition-3d-hover" href="/login" target="_blank">Déconnexion</a>
+                        <a class="nav-button transition-3d-hover" href="/" target="_blank">Déconnexion</a>
                 </li>
                 </form>
                 <li class="nav-item">

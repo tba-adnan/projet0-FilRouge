@@ -21,7 +21,7 @@
                         <div class="card">
 
                             <!-- form -->
-                            <div class="card-header">Modifier</div>
+                            <div class="card-header bi bi-pencil-square" > Modifier</div>
                             <div class="card-body ">
                                 <div class="row tm-edit-product-row  ">
                                     <div class="col-xl-6 col-lg-12 col-md-12">
@@ -37,19 +37,19 @@
                                            
                                             <div class="form-group mb-3">
                                                 <input type="hidden"name="id" value="{{$value->id_medic}}">
-                                                <label for="">Nom</label>
+                                                <label for="">Nom : </label>
                                                 <input id="name" name="nom_medic" type="text"
                                                     class="form-control validate" required
                                                     value="{{$value->nom_medic}}">
                                             </div>
                                             <div class="form-group mb-3">
-                                                <label for="">Prix</label>
+                                                <label for="">Prix : </label>
                                                 <input id="name" name="prix_medic" type="text"
                                                     class="form-control validate" required
                                                     value="{{$value->prix_medic}}">
                                             </div>
                                             <div class="form-group mb-3">
-                                                <label for="">Rom</label>
+                                                <label for="">Remboursement : </label>
                                                 <input id="name" name="rom_medic" type="text"
                                                     class="form-control validate" required
                                                     value="{{$value->rom_medic}}">
@@ -63,7 +63,7 @@
                                     
                                     <div class="col-12">
                                         <button type="submit"
-                                            class="btn btn-primary btn-block text-uppercase">Ajouter</button>
+                                            class="btn btn-primary btn-block text-uppercase bi bi-box-arrow-down"> Sauvegarder</button>
                                     </div>
                                     @empty
                                                 

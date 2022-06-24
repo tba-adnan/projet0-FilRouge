@@ -35,7 +35,7 @@
                                     <div class="card-header">
                                         <img src="{{URL::asset('eir-assets/images/costum-images/eir-db.png'); }}" width="330" height="280" class="text-center" >
                                         <!--  -->
-                                        <h3 class="text-center font-weight-light my-4">Connexion Eir db : </h3>
+                                        <h3 class="text-center font-weight-light my-4">Connexion Base de données de eir: </h3>
                                     </div>
                                     <div class="card-body">
                                         <form  method="POST">

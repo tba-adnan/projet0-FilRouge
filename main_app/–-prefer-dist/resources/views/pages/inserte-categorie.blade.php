@@ -27,7 +27,7 @@
                                     <div class="row">
                                         <div class="col-6">
                                             <div class="form-group ">
-                                                <label for="cc-exp" class="control-label mb-1">Nom Medicament : </label>
+                                                <label for="cc-exp" class="control-label mb-1">Nom Medicament : (specifié)</label>
                                                 <input id="cc-exp" name="nom_medic" type="text"
                                                     class="form-control cc-exp" value="" data-val="true"
                                                     data-val-required="Please enter the card expiration"
@@ -39,7 +39,7 @@
                                         </div>
                                         <div class="col-6">
                                             <div class="form-group ">
-                                                <label for="cc-exp" class="control-label mb-1">Prix : </label>
+                                                <label for="cc-exp" class="control-label mb-1">Prix : (en dh./MAD.)</label>
                                                 <input id="cc-exp" name="prix_medic" type="text"
                                                     class="form-control cc-exp" value="" data-val="true"
                                                     data-val-required="Please enter the card expiration"
@@ -51,7 +51,7 @@
                                         </div>
                                         <div class="col-6">
                                             <div class="form-group ">
-                                                <label for="cc-exp" class="control-label mb-1">Remboursement : </label>
+                                                <label for="cc-exp" class="control-label mb-1">Remboursement : (en dh./MAD.)</label>
                                                 <input id="cc-exp" name="rom_medic" type="text"
                                                     class="form-control cc-exp" value="" data-val="true"
                                                     data-val-required="Please enter the card expiration"
