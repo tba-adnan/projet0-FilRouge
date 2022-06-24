@@ -5,7 +5,7 @@
 **Slides >** [**Here.**](https://docs.google.com/presentation/d/1qK_CseSbKhN749owblIMuSmWVDPw7Ui5rVYpdWaDbG8/edit?usp=sharing)
 
 
-## Going agile : 
+## Demo data : 
 
 admin : adnane@eir.io:password
 
