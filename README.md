@@ -9,6 +9,8 @@
 
 admin : adnane@eir.io:password
 
-demo account : **myemail**gmail.com:superuser
+db admin : db@eir.io:password
+
+demo account : testing@protonmail.com:superuser
 
 [**Jira instance.**](https://tb-adn.atlassian.net/)
